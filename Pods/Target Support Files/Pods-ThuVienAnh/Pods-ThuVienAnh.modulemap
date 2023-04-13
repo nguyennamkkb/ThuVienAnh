@@ -1,0 +1,6 @@
+framework module Pods_ThuVienAnh {
+  umbrella header "Pods-ThuVienAnh-umbrella.h"
+
+  export *
+  module * { export * }
+}

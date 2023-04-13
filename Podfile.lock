@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (4.9.1)
+  - DropDown (2.3.13)
+  - FittedSheets (2.4.2)
+  - IQKeyboardManagerSwift (6.5.10)
+  - Kingfisher (5.15.8):
+    - Kingfisher/Core (= 5.15.8)
+  - Kingfisher/Core (5.15.8)
+  - ObjectMapper (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8)
+  - DropDown
+  - FittedSheets
+  - IQKeyboardManagerSwift
+  - Kingfisher (~> 5.15.7)
+  - ObjectMapper
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DropDown
+    - FittedSheets
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - ObjectMapper
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  FittedSheets: 661408776eb4ff514a31da75b3600bd7222b2b3d
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+
+PODFILE CHECKSUM: 72c4308eae68aab190b435d5249ee93ebe54a3f0
+
+COCOAPODS: 1.11.3
