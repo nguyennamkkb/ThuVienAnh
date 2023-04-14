@@ -7,6 +7,3 @@
 
 import Foundation
 
-let imagePath: String = "/Resources/Images/"
-let iconPath: String = "Resources/Icons/"
-
