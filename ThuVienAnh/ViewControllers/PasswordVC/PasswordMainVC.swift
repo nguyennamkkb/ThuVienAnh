@@ -16,6 +16,10 @@ class PasswordMainVC: UIViewController {
     }
 
 
+    @IBAction func newScreen(_ sender: UIButton) {
+        let vc = SettingMainVC()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     /*
     // MARK: - Navigation
 
