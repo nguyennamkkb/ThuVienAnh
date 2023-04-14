@@ -1,5 +1,5 @@
 //
-//  SettingMainVC.swift
+//  CreateNewPasswordVC.swift
 //  ThuVienAnh
 //
 //  Created by namnl on 14/04/2023.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-class SettingMainVC: UIViewController {
+class CreateNewPasswordVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .gray
+
         // Do any additional setup after loading the view.
     }
 

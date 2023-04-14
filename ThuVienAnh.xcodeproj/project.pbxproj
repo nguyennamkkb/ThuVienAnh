@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B2F003B29E99B8C007DED42 /* PItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2F003929E99B8C007DED42 /* PItemCell.swift */; };
+		0B2F003C29E99B8C007DED42 /* PItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2F003A29E99B8C007DED42 /* PItemCell.xib */; };
+		0B2F004029E9A4E3007DED42 /* CreateNewPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2F003E29E9A4E3007DED42 /* CreateNewPasswordVC.swift */; };
+		0B2F004129E9A4E3007DED42 /* CreateNewPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2F003F29E9A4E3007DED42 /* CreateNewPasswordVC.xib */; };
 		0BA163C929E8D88900FFB12A /* ic-category.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BA163C529E8D88900FFB12A /* ic-category.png */; };
 		0BA163CA29E8D88900FFB12A /* ic-password.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BA163C629E8D88900FFB12A /* ic-password.png */; };
 		0BA163CB29E8D88900FFB12A /* ic-photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BA163C729E8D88900FFB12A /* ic-photo.png */; };
@@ -34,6 +38,10 @@
 
 /* Begin PBXFileReference section */
 		0A6870A16B713B0DBE5D0A01 /* Pods-ThuVienAnh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThuVienAnh.release.xcconfig"; path = "Target Support Files/Pods-ThuVienAnh/Pods-ThuVienAnh.release.xcconfig"; sourceTree = "<group>"; };
+		0B2F003929E99B8C007DED42 /* PItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PItemCell.swift; sourceTree = "<group>"; };
+		0B2F003A29E99B8C007DED42 /* PItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PItemCell.xib; sourceTree = "<group>"; };
+		0B2F003E29E9A4E3007DED42 /* CreateNewPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPasswordVC.swift; sourceTree = "<group>"; };
+		0B2F003F29E9A4E3007DED42 /* CreateNewPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateNewPasswordVC.xib; sourceTree = "<group>"; };
 		0BA163C529E8D88900FFB12A /* ic-category.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-category.png"; sourceTree = "<group>"; };
 		0BA163C629E8D88900FFB12A /* ic-password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-password.png"; sourceTree = "<group>"; };
 		0BA163C729E8D88900FFB12A /* ic-photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-photo.png"; sourceTree = "<group>"; };
@@ -83,6 +91,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B2F003829E99B64007DED42 /* PItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				0B2F003929E99B8C007DED42 /* PItemCell.swift */,
+				0B2F003A29E99B8C007DED42 /* PItemCell.xib */,
+			);
+			path = PItemCell;
+			sourceTree = "<group>";
+		};
+		0B2F003D29E9A480007DED42 /* PCreate */ = {
+			isa = PBXGroup;
+			children = (
+				0B2F003E29E9A4E3007DED42 /* CreateNewPasswordVC.swift */,
+				0B2F003F29E9A4E3007DED42 /* CreateNewPasswordVC.xib */,
+			);
+			path = PCreate;
+			sourceTree = "<group>";
+		};
 		0BA163CD29E8D8C400FFB12A /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +119,8 @@
 		0BA163CE29E8DB9F00FFB12A /* PasswordVC */ = {
 			isa = PBXGroup;
 			children = (
+				0B2F003D29E9A480007DED42 /* PCreate */,
+				0B2F003829E99B64007DED42 /* PItemCell */,
 				0BA163D229E8DBE900FFB12A /* PasswordMainVC.swift */,
 				0BA163D329E8DBE900FFB12A /* PasswordMainVC.xib */,
 			);
@@ -297,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B2F003C29E99B8C007DED42 /* PItemCell.xib in Resources */,
 				0BA163D929E8DBF900FFB12A /* SettingMainVC.xib in Resources */,
 				0BA163D529E8DBE900FFB12A /* PasswordMainVC.xib in Resources */,
 				0BA163DD29E8DC1000FFB12A /* CategoryMainVC.xib in Resources */,
@@ -306,6 +335,7 @@
 				D9CEDE5C29E80AFC00A7C846 /* LaunchScreen.storyboard in Resources */,
 				0BA163CB29E8D88900FFB12A /* ic-photo.png in Resources */,
 				0BA163E129E8DC2300FFB12A /* PhotoMainVC.xib in Resources */,
+				0B2F004129E9A4E3007DED42 /* CreateNewPasswordVC.xib in Resources */,
 				D9CEDE5929E80AFC00A7C846 /* Assets.xcassets in Resources */,
 				0BA163CA29E8D88900FFB12A /* ic-password.png in Resources */,
 				0BA163C929E8D88900FFB12A /* ic-category.png in Resources */,
@@ -361,7 +391,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B2F003B29E99B8C007DED42 /* PItemCell.swift in Sources */,
 				0BA163D829E8DBF900FFB12A /* SettingMainVC.swift in Sources */,
+				0B2F004029E9A4E3007DED42 /* CreateNewPasswordVC.swift in Sources */,
 				D9CEDE5029E80AFA00A7C846 /* AppDelegate.swift in Sources */,
 				D9CEDE6E29E813A000A7C846 /* MainVC.swift in Sources */,
 				D9CEDE5229E80AFA00A7C846 /* SceneDelegate.swift in Sources */,
@@ -515,7 +547,6 @@
 				INFOPLIST_FILE = ThuVienAnh/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -545,7 +576,6 @@
 				INFOPLIST_FILE = ThuVienAnh/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

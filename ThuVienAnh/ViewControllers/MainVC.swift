@@ -36,10 +36,11 @@ class MainVC: UITabBarController {
         let settingNavi = UINavigationController(rootViewController: settingVC)
         
         self.viewControllers = [passwordNavi, categoryNavi,photoNavi, settingNavi]
-
+        setLayout()
     }
     func setLayout(){
-        
+        tabBar.tintColor = UIColor(hexString: "#00DAC0")
+        tabBar.barTintColor =  .white
     }
     
     
