@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BA163C929E8D88900FFB12A /* ic-category.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BA163C529E8D88900FFB12A /* ic-category.png */; };
+		0BA163CA29E8D88900FFB12A /* ic-password.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BA163C629E8D88900FFB12A /* ic-password.png */; };
+		0BA163CB29E8D88900FFB12A /* ic-photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BA163C729E8D88900FFB12A /* ic-photo.png */; };
+		0BA163CC29E8D88900FFB12A /* ic-setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BA163C829E8D88900FFB12A /* ic-setting.png */; };
+		0BA163D429E8DBE900FFB12A /* PasswordMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA163D229E8DBE900FFB12A /* PasswordMainVC.swift */; };
+		0BA163D529E8DBE900FFB12A /* PasswordMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BA163D329E8DBE900FFB12A /* PasswordMainVC.xib */; };
+		0BA163D829E8DBF900FFB12A /* SettingMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA163D629E8DBF900FFB12A /* SettingMainVC.swift */; };
+		0BA163D929E8DBF900FFB12A /* SettingMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BA163D729E8DBF900FFB12A /* SettingMainVC.xib */; };
+		0BA163DC29E8DC1000FFB12A /* CategoryMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA163DA29E8DC1000FFB12A /* CategoryMainVC.swift */; };
+		0BA163DD29E8DC1000FFB12A /* CategoryMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BA163DB29E8DC1000FFB12A /* CategoryMainVC.xib */; };
+		0BA163E029E8DC2300FFB12A /* PhotoMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA163DE29E8DC2300FFB12A /* PhotoMainVC.swift */; };
+		0BA163E129E8DC2300FFB12A /* PhotoMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BA163DF29E8DC2300FFB12A /* PhotoMainVC.xib */; };
 		81348056D97FAA8E13D4934E /* Pods_ThuVienAnh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BCCC95D179234224E94E0F9 /* Pods_ThuVienAnh.framework */; };
 		D9CEDE5029E80AFA00A7C846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CEDE4F29E80AFA00A7C846 /* AppDelegate.swift */; };
 		D9CEDE5229E80AFA00A7C846 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CEDE5129E80AFA00A7C846 /* SceneDelegate.swift */; };
@@ -20,6 +32,18 @@
 
 /* Begin PBXFileReference section */
 		0A6870A16B713B0DBE5D0A01 /* Pods-ThuVienAnh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThuVienAnh.release.xcconfig"; path = "Target Support Files/Pods-ThuVienAnh/Pods-ThuVienAnh.release.xcconfig"; sourceTree = "<group>"; };
+		0BA163C529E8D88900FFB12A /* ic-category.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-category.png"; sourceTree = "<group>"; };
+		0BA163C629E8D88900FFB12A /* ic-password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-password.png"; sourceTree = "<group>"; };
+		0BA163C729E8D88900FFB12A /* ic-photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-photo.png"; sourceTree = "<group>"; };
+		0BA163C829E8D88900FFB12A /* ic-setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-setting.png"; sourceTree = "<group>"; };
+		0BA163D229E8DBE900FFB12A /* PasswordMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordMainVC.swift; sourceTree = "<group>"; };
+		0BA163D329E8DBE900FFB12A /* PasswordMainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordMainVC.xib; sourceTree = "<group>"; };
+		0BA163D629E8DBF900FFB12A /* SettingMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingMainVC.swift; sourceTree = "<group>"; };
+		0BA163D729E8DBF900FFB12A /* SettingMainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingMainVC.xib; sourceTree = "<group>"; };
+		0BA163DA29E8DC1000FFB12A /* CategoryMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryMainVC.swift; sourceTree = "<group>"; };
+		0BA163DB29E8DC1000FFB12A /* CategoryMainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryMainVC.xib; sourceTree = "<group>"; };
+		0BA163DE29E8DC2300FFB12A /* PhotoMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMainVC.swift; sourceTree = "<group>"; };
+		0BA163DF29E8DC2300FFB12A /* PhotoMainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoMainVC.xib; sourceTree = "<group>"; };
 		5BCCC95D179234224E94E0F9 /* Pods_ThuVienAnh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThuVienAnh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8079763120674EA0B18748C2 /* Pods-ThuVienAnh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThuVienAnh.debug.xcconfig"; path = "Target Support Files/Pods-ThuVienAnh/Pods-ThuVienAnh.debug.xcconfig"; sourceTree = "<group>"; };
 		D9CEDE4C29E80AFA00A7C846 /* ThuVienAnh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThuVienAnh.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +70,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BA163CD29E8D8C400FFB12A /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		0BA163CE29E8DB9F00FFB12A /* PasswordVC */ = {
+			isa = PBXGroup;
+			children = (
+				0BA163D229E8DBE900FFB12A /* PasswordMainVC.swift */,
+				0BA163D329E8DBE900FFB12A /* PasswordMainVC.xib */,
+			);
+			path = PasswordVC;
+			sourceTree = "<group>";
+		};
+		0BA163CF29E8DBB000FFB12A /* SettingVC */ = {
+			isa = PBXGroup;
+			children = (
+				0BA163D629E8DBF900FFB12A /* SettingMainVC.swift */,
+				0BA163D729E8DBF900FFB12A /* SettingMainVC.xib */,
+			);
+			path = SettingVC;
+			sourceTree = "<group>";
+		};
+		0BA163D029E8DBB700FFB12A /* CategoryVC */ = {
+			isa = PBXGroup;
+			children = (
+				0BA163DA29E8DC1000FFB12A /* CategoryMainVC.swift */,
+				0BA163DB29E8DC1000FFB12A /* CategoryMainVC.xib */,
+			);
+			path = CategoryVC;
+			sourceTree = "<group>";
+		};
+		0BA163D129E8DBC700FFB12A /* PhotoVC */ = {
+			isa = PBXGroup;
+			children = (
+				0BA163DE29E8DC2300FFB12A /* PhotoMainVC.swift */,
+				0BA163DF29E8DC2300FFB12A /* PhotoMainVC.xib */,
+			);
+			path = PhotoVC;
+			sourceTree = "<group>";
+		};
 		2C6765767DD54EEF29CB719A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +166,10 @@
 		D9CEDE6329E80BAA00A7C846 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0BA163D129E8DBC700FFB12A /* PhotoVC */,
+				0BA163D029E8DBB700FFB12A /* CategoryVC */,
+				0BA163CF29E8DBB000FFB12A /* SettingVC */,
+				0BA163CE29E8DB9F00FFB12A /* PasswordVC */,
 				D9CEDE6C29E813A000A7C846 /* MainVC.swift */,
 				D9CEDE6D29E813A000A7C846 /* MainVC.xib */,
 			);
@@ -108,7 +179,7 @@
 		D9CEDE7029E815CD00A7C846 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D9CEDE7229E815DC00A7C846 /* Images */,
+				0BA163CD29E8D8C400FFB12A /* images */,
 				D9CEDE7129E815D700A7C846 /* Icons */,
 			);
 			path = Resources;
@@ -117,16 +188,13 @@
 		D9CEDE7129E815D700A7C846 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				0BA163C529E8D88900FFB12A /* ic-category.png */,
+				0BA163C629E8D88900FFB12A /* ic-password.png */,
+				0BA163C729E8D88900FFB12A /* ic-photo.png */,
+				0BA163C829E8D88900FFB12A /* ic-setting.png */,
 				D9CEDE7329E815E700A7C846 /* Icon App.png */,
 			);
 			path = Icons;
-			sourceTree = "<group>";
-		};
-		D9CEDE7229E815DC00A7C846 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Images;
 			sourceTree = "<group>";
 		};
 		D9CEDE7529E8164700A7C846 /* Helpers */ = {
@@ -197,10 +265,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BA163D929E8DBF900FFB12A /* SettingMainVC.xib in Resources */,
+				0BA163D529E8DBE900FFB12A /* PasswordMainVC.xib in Resources */,
+				0BA163DD29E8DC1000FFB12A /* CategoryMainVC.xib in Resources */,
+				0BA163CC29E8D88900FFB12A /* ic-setting.png in Resources */,
 				D9CEDE6F29E813A000A7C846 /* MainVC.xib in Resources */,
 				D9CEDE7429E815E700A7C846 /* Icon App.png in Resources */,
 				D9CEDE5C29E80AFC00A7C846 /* LaunchScreen.storyboard in Resources */,
+				0BA163CB29E8D88900FFB12A /* ic-photo.png in Resources */,
+				0BA163E129E8DC2300FFB12A /* PhotoMainVC.xib in Resources */,
 				D9CEDE5929E80AFC00A7C846 /* Assets.xcassets in Resources */,
+				0BA163CA29E8D88900FFB12A /* ic-password.png in Resources */,
+				0BA163C929E8D88900FFB12A /* ic-category.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,10 +329,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BA163D829E8DBF900FFB12A /* SettingMainVC.swift in Sources */,
 				D9CEDE5029E80AFA00A7C846 /* AppDelegate.swift in Sources */,
 				D9CEDE6E29E813A000A7C846 /* MainVC.swift in Sources */,
 				D9CEDE5229E80AFA00A7C846 /* SceneDelegate.swift in Sources */,
+				0BA163E029E8DC2300FFB12A /* PhotoMainVC.swift in Sources */,
+				0BA163DC29E8DC1000FFB12A /* CategoryMainVC.swift in Sources */,
 				D9CEDE7729E8165D00A7C846 /* Constants.swift in Sources */,
+				0BA163D429E8DBE900FFB12A /* PasswordMainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

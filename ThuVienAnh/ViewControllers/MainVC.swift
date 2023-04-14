@@ -6,24 +6,38 @@
 //
 
 import UIKit
-
-class MainVC: UIViewController {
-
+import Kingfisher
+class MainVC: UITabBarController {
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
-        // Do any additional setup after loading the view.
+        
+        //passwordVC
+        let passwordVC = PasswordMainVC()
+        passwordVC.tabBarItem = UITabBarItem(title: "Passwords", image: UIImage(named: "ic-password"), tag: 1)
+        let passwordNavi = UINavigationController(rootViewController: passwordVC)
+        
+
+        
+        //categoryVC
+        let categoryVC = CategoryMainVC()
+        categoryVC.tabBarItem = UITabBarItem(title: "Categories", image: UIImage(named: "ic-category"), tag: 1)
+        let categoryNavi = UINavigationController(rootViewController: categoryVC)
+        
+        //photoVC
+        let photoVC = PhotoMainVC()
+        photoVC.tabBarItem = UITabBarItem(title: "Photos", image: UIImage(named: "ic-photo"), tag: 1)
+        let photoNavi = UINavigationController(rootViewController: photoVC)
+        
+        //Profile
+        let settingVC = SettingMainVC()
+        settingVC.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(named: "ic-setting"), tag: 1)
+        let settingNavi = UINavigationController(rootViewController: settingVC)
+        
+        self.viewControllers = [passwordNavi, categoryNavi,photoNavi, settingNavi]
+
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
 }
