@@ -15,14 +15,14 @@ class MainVC: UITabBarController {
         
         //passwordVC
         let passwordVC = PasswordMainVC()
-        passwordVC.tabBarItem = UITabBarItem(title: "Passwords", image: UIImage(named: "ic-password"), tag: 1)
+        passwordVC.tabBarItem = UITabBarItem(title: "Passwords", image: UIImage(named: "ic-stack"), tag: 1)
         let passwordNavi = UINavigationController(rootViewController: passwordVC)
         
 
         
         //categoryVC
         let categoryVC = CategoryMainVC()
-        categoryVC.tabBarItem = UITabBarItem(title: "Categories", image: UIImage(named: "ic-category"), tag: 1)
+        categoryVC.tabBarItem = UITabBarItem(title: "Categories", image: UIImage(named: "ic-note"), tag: 1)
         let categoryNavi = UINavigationController(rootViewController: categoryVC)
         
         //photoVC
@@ -37,6 +37,9 @@ class MainVC: UITabBarController {
         
         self.viewControllers = [passwordNavi, categoryNavi,photoNavi, settingNavi]
 
+    }
+    func setLayout(){
+        
     }
     
     
