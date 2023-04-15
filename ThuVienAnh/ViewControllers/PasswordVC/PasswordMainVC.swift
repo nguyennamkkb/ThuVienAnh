@@ -37,8 +37,8 @@ class PasswordMainVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
     }
     
     @IBAction func newScreen(_ sender: UIButton) {
-//        let vc = CreateNewPasswordVC()
-        let vc = InputPasswordAppVC()
+        let vc = CreateNewPasswordVC()
+//        let vc = InputPasswordAppVC()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

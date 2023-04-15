@@ -7,6 +7,7 @@ PODS:
     - Kingfisher/Core (= 5.15.8)
   - Kingfisher/Core (5.15.8)
   - ObjectMapper (4.2.0)
+  - SwifterSwift/UIKit (5.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.8)
@@ -15,6 +16,7 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
   - Kingfisher (~> 5.15.7)
   - ObjectMapper
+  - SwifterSwift/UIKit
 
 SPEC REPOS:
   trunk:
@@ -24,6 +26,7 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
     - Kingfisher
     - ObjectMapper
+    - SwifterSwift
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
@@ -32,7 +35,8 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
   Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
 
-PODFILE CHECKSUM: 72c4308eae68aab190b435d5249ee93ebe54a3f0
+PODFILE CHECKSUM: c9ae4e981cbfd63f90808ffee4bbb1a6aea6376c
 
 COCOAPODS: 1.12.0

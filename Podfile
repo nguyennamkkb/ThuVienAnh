@@ -13,5 +13,6 @@ pod 'IQKeyboardManagerSwift'
 pod 'Kingfisher', '~>5.15.7'
 pod 'DropDown'
 pod 'FittedSheets'
+pod 'SwifterSwift/UIKit'         # UIKit Extensions
 end
 
