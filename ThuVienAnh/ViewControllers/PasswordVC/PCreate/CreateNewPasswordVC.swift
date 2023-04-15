@@ -16,11 +16,6 @@ class CreateNewPasswordVC: UIViewController {
     
     @IBOutlet var generatePasswordView: UIView!
     
-    @IBOutlet var AZView: UIView!
-    @IBOutlet var specialView: UIView!
-    @IBOutlet var azView: UIView!
-    @IBOutlet var v09View: UIView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,23 +39,14 @@ class CreateNewPasswordVC: UIViewController {
         accountView.layer.cornerRadius = 10
         passwordView.layer.cornerRadius = 10
         btnSave.layer.cornerRadius = 10
-        
-        AZView.layer.cornerRadius = 10
-        v09View.layer.cornerRadius = 10
-        azView.layer.cornerRadius = 10
-        specialView.layer.cornerRadius = 10
+
         
     }
     
     @IBAction func generatePasswordPressed(_ sender: UIButton) {
         
         let vc = PasswordGenerator()
-        let sheetController = SheetViewController(
-            controller: vc,
-            sizes: [.intrinsic, .percent(0.25), .fixed(200), .fullscreen])
-        sheetController.cornerRadius = 0
-        
-        self.present(sheetController, animated: true, completion: nil)
+        self.present(vc, animated: true, completion: nil)
     }
 }
 extension CreateNewPasswordVC:UIGestureRecognizerDelegate {

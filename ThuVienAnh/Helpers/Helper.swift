@@ -15,4 +15,5 @@ class Helper {
         imageView.kf.setImage(with: url)
         return imageView
     }
+  
 }

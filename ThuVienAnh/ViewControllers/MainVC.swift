@@ -12,7 +12,7 @@ class MainVC: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         //passwordVC
         let passwordVC = PasswordMainVC()
         passwordVC.tabBarItem = UITabBarItem(title: "Passwords", image: UIImage(named: "ic-stack"), tag: 1)

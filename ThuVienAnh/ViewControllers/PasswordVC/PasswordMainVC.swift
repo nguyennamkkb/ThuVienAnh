@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PasswordMainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class PasswordMainVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
 
 
     @IBOutlet var searchTF: UIView!
@@ -37,30 +37,13 @@ class PasswordMainVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     @IBAction func newScreen(_ sender: UIButton) {
-        let vc = CreateNewPasswordVC()
+//        let vc = CreateNewPasswordVC()
+        let vc = InputPasswordAppVC()
         self.navigationController?.pushViewController(vc, animated: true)
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
-        // Hide the navigation bar on the this view controller
-        self.navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-
-        // Show the navigation bar on other view controllers
-        self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     func setLayout(){
         searchTF.layer.cornerRadius = 10
         btnAdd.layer.cornerRadius = 20
-    }
-}
-extension PasswordMainVC:UIGestureRecognizerDelegate {
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        return true
     }
 }
