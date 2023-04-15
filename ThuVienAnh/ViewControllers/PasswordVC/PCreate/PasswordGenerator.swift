@@ -1,16 +1,17 @@
 //
-//  SettingMainVC.swift
+//  PasswordGenerator.swift
 //  ThuVienAnh
 //
-//  Created by namnl on 14/04/2023.
+//  Created by namnl on 15/04/2023.
 //
 
 import UIKit
 
-class SettingMainVC: UIViewController {
+class PasswordGenerator: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .green
         // Do any additional setup after loading the view.
     }
 

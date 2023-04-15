@@ -11,6 +11,8 @@
 		0B2F003C29E99B8C007DED42 /* PItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2F003A29E99B8C007DED42 /* PItemCell.xib */; };
 		0B2F004029E9A4E3007DED42 /* CreateNewPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2F003E29E9A4E3007DED42 /* CreateNewPasswordVC.swift */; };
 		0B2F004129E9A4E3007DED42 /* CreateNewPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2F003F29E9A4E3007DED42 /* CreateNewPasswordVC.xib */; };
+		0B3282F829EA2C0200474907 /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3282F629EA2C0200474907 /* PasswordGenerator.swift */; };
+		0B3282F929EA2C0200474907 /* PasswordGenerator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3282F729EA2C0200474907 /* PasswordGenerator.xib */; };
 		0BA163C929E8D88900FFB12A /* ic-category.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BA163C529E8D88900FFB12A /* ic-category.png */; };
 		0BA163CA29E8D88900FFB12A /* ic-password.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BA163C629E8D88900FFB12A /* ic-password.png */; };
 		0BA163CB29E8D88900FFB12A /* ic-photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BA163C729E8D88900FFB12A /* ic-photo.png */; };
@@ -42,6 +44,8 @@
 		0B2F003A29E99B8C007DED42 /* PItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PItemCell.xib; sourceTree = "<group>"; };
 		0B2F003E29E9A4E3007DED42 /* CreateNewPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPasswordVC.swift; sourceTree = "<group>"; };
 		0B2F003F29E9A4E3007DED42 /* CreateNewPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateNewPasswordVC.xib; sourceTree = "<group>"; };
+		0B3282F629EA2C0200474907 /* PasswordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGenerator.swift; sourceTree = "<group>"; };
+		0B3282F729EA2C0200474907 /* PasswordGenerator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordGenerator.xib; sourceTree = "<group>"; };
 		0BA163C529E8D88900FFB12A /* ic-category.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-category.png"; sourceTree = "<group>"; };
 		0BA163C629E8D88900FFB12A /* ic-password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-password.png"; sourceTree = "<group>"; };
 		0BA163C729E8D88900FFB12A /* ic-photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-photo.png"; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 			children = (
 				0B2F003E29E9A4E3007DED42 /* CreateNewPasswordVC.swift */,
 				0B2F003F29E9A4E3007DED42 /* CreateNewPasswordVC.xib */,
+				0B3282F629EA2C0200474907 /* PasswordGenerator.swift */,
+				0B3282F729EA2C0200474907 /* PasswordGenerator.xib */,
 			);
 			path = PCreate;
 			sourceTree = "<group>";
@@ -325,6 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B3282F929EA2C0200474907 /* PasswordGenerator.xib in Resources */,
 				0B2F003C29E99B8C007DED42 /* PItemCell.xib in Resources */,
 				0BA163D929E8DBF900FFB12A /* SettingMainVC.xib in Resources */,
 				0BA163D529E8DBE900FFB12A /* PasswordMainVC.xib in Resources */,
@@ -398,6 +405,7 @@
 				D9CEDE6E29E813A000A7C846 /* MainVC.swift in Sources */,
 				D9CEDE5229E80AFA00A7C846 /* SceneDelegate.swift in Sources */,
 				0BA163E029E8DC2300FFB12A /* PhotoMainVC.swift in Sources */,
+				0B3282F829EA2C0200474907 /* PasswordGenerator.swift in Sources */,
 				D9BE5AA229E96CAF0044CE17 /* Extensions.swift in Sources */,
 				D922BF0C29E8EBBA001E3E26 /* Helper.swift in Sources */,
 				0BA163DC29E8DC1000FFB12A /* CategoryMainVC.swift in Sources */,

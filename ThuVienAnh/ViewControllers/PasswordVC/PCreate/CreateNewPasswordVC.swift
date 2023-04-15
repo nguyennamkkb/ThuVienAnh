@@ -6,24 +6,65 @@
 //
 
 import UIKit
-
+import FittedSheets
 class CreateNewPasswordVC: UIViewController {
 
+    @IBOutlet var titleView: UIView!
+    @IBOutlet var accountView: UIView!
+    @IBOutlet var passwordView: UIView!
+    @IBOutlet var btnSave: UIButton!
+    
+    @IBOutlet var generatePasswordView: UIView!
+    
+    @IBOutlet var AZView: UIView!
+    @IBOutlet var specialView: UIView!
+    @IBOutlet var azView: UIView!
+    @IBOutlet var v09View: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        setLayout()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
 
-        // Do any additional setup after loading the view.
+        // Hide the navigation bar on the this view controller
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func backToPasswordMainPressed(_ sender: UIButton) { 
+        self.navigationController?.popViewController(animated: true)
     }
-    */
-
+    
+ 
+    func setLayout(){
+        titleView.layer.cornerRadius = 10
+        accountView.layer.cornerRadius = 10
+        passwordView.layer.cornerRadius = 10
+        btnSave.layer.cornerRadius = 10
+        
+        AZView.layer.cornerRadius = 10
+        v09View.layer.cornerRadius = 10
+        azView.layer.cornerRadius = 10
+        specialView.layer.cornerRadius = 10
+        
+    }
+    
+    @IBAction func generatePasswordPressed(_ sender: UIButton) {
+        
+        let vc = PasswordGenerator()
+        let sheetController = SheetViewController(
+            controller: vc,
+            sizes: [.intrinsic, .percent(0.25), .fixed(200), .fullscreen])
+        sheetController.cornerRadius = 0
+        
+        self.present(sheetController, animated: true, completion: nil)
+    }
+}
+extension CreateNewPasswordVC:UIGestureRecognizerDelegate {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
+    }
 }
