@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PasswordGenerator: UIViewController {
+class PasswordGenerator: BaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,7 +15,10 @@ class PasswordGenerator: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func btnClosePressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

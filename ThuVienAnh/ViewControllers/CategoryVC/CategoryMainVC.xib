@@ -32,7 +32,7 @@
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvh-I7-3ZK" userLabel="ViewSearch">
-                    <rect key="frame" x="20" y="75" width="353" height="94"/>
+                    <rect key="frame" x="20" y="75" width="353" height="83"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nx-Va-1Qj">
                             <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
@@ -45,17 +45,17 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uxv-l0-Gfg" userLabel="ViewInput">
-                            <rect key="frame" x="0.0" y="43" width="353" height="51"/>
+                            <rect key="frame" x="0.0" y="43" width="353" height="40"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-search-20" translatesAutoresizingMaskIntoConstraints="NO" id="01D-dG-JoR">
-                                    <rect key="frame" x="15" y="15.666666666666657" width="20" height="20"/>
+                                    <rect key="frame" x="15" y="10" width="20" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="20" id="0YX-ev-h6W"/>
                                         <constraint firstAttribute="height" constant="20" id="7ra-qx-9fV"/>
                                     </constraints>
                                 </imageView>
                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter name password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hth-tM-gd7">
-                                    <rect key="frame" x="45" y="10.666666666666657" width="293" height="30"/>
+                                    <rect key="frame" x="45" y="5" width="293" height="30"/>
                                     <color key="tintColor" red="0.99215692280000001" green="0.99215692280000001" blue="0.99215680360000003" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="bOo-Dd-URb"/>
@@ -73,7 +73,7 @@
                                 <constraint firstAttribute="trailing" secondItem="hth-tM-gd7" secondAttribute="trailing" constant="15" id="yTR-rX-2Ua"/>
                             </constraints>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                     <real key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
@@ -85,7 +85,7 @@
                         <constraint firstItem="0nx-Va-1Qj" firstAttribute="leading" secondItem="gvh-I7-3ZK" secondAttribute="leading" id="Aoi-Os-7FI"/>
                         <constraint firstItem="Uxv-l0-Gfg" firstAttribute="leading" secondItem="gvh-I7-3ZK" secondAttribute="leading" id="ES2-qK-DAd"/>
                         <constraint firstAttribute="trailing" secondItem="Uxv-l0-Gfg" secondAttribute="trailing" id="aY2-TG-yHG"/>
-                        <constraint firstAttribute="height" constant="94" id="cVo-ew-GxS"/>
+                        <constraint firstAttribute="height" constant="83" id="cVo-ew-GxS"/>
                         <constraint firstAttribute="bottom" secondItem="Uxv-l0-Gfg" secondAttribute="bottom" id="gDq-rP-JJ7"/>
                         <constraint firstAttribute="trailing" secondItem="0nx-Va-1Qj" secondAttribute="trailing" id="m1i-VI-uGA"/>
                         <constraint firstItem="0nx-Va-1Qj" firstAttribute="top" secondItem="gvh-I7-3ZK" secondAttribute="top" id="okE-hQ-Mdl"/>
@@ -100,14 +100,14 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rzr-8z-7gq" userLabel="separator">
-                    <rect key="frame" x="20" y="199" width="353" height="1"/>
+                    <rect key="frame" x="20" y="188" width="353" height="1"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="KPt-eg-KfT"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ax-8B-CYi" userLabel="title">
-                    <rect key="frame" x="20" y="220" width="353" height="40"/>
+                    <rect key="frame" x="20" y="209" width="353" height="40"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ckh-oP-ciM">
                             <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>

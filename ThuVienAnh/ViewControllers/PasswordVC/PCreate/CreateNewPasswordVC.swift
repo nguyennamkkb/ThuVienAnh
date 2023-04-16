@@ -7,7 +7,7 @@
 
 import UIKit
 import FittedSheets
-class CreateNewPasswordVC: UIViewController {
+class CreateNewPasswordVC: BaseVC {
 
     @IBOutlet var titleView: UIView!
     @IBOutlet var accountView: UIView!
@@ -48,9 +48,8 @@ class CreateNewPasswordVC: UIViewController {
         let vc = PasswordGenerator()
         self.present(vc, animated: true, completion: nil)
     }
-}
-extension CreateNewPasswordVC:UIGestureRecognizerDelegate {
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        return true
+    
+    @IBAction func btnSavePressed(_ sender: UIButton) {
+        showAlert()
     }
 }

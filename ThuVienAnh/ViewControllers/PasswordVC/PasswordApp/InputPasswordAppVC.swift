@@ -13,7 +13,7 @@ class InputPasswordAppVC: BaseVC {
     @IBOutlet var dot2: UIImageView!
     @IBOutlet var dot3: UIImageView!
     @IBOutlet var dot4: UIImageView!
-    @IBOutlet var alertView: UIView!
+    @IBOutlet var messageView: UIView!
     let localAuthenticationContext = LAContext()
     var isHideAlert: Int = 1
     var userPassword: String? = ""
@@ -94,20 +94,20 @@ class InputPasswordAppVC: BaseVC {
         }
         
     }
-    func hideAlert(){
+    func hideMessage(){
         UIView.animate(withDuration: 0.2) {
-            self.alertView.alpha = 0
-            self.alertView.isHidden = true
+            self.messageView.alpha = 0
+            self.messageView.isHidden = true
         }
         
     }
-    func showAlert(){
+    func showMessage(){
         UIView.animate(withDuration: 0.2) {
-            self.alertView.alpha = 1
-            self.alertView.isHidden = false
+            self.messageView.alpha = 1
+            self.messageView.isHidden = false
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
-            self.hideAlert()
+            self.hideMessage()
         }
     }
     func setlayout(){

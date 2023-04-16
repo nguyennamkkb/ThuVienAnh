@@ -36,7 +36,7 @@ class PasswordMainVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    @IBAction func newScreen(_ sender: UIButton) {
+    @IBAction func btnAddPressed(_ sender: UIButton) {
         let vc = CreateNewPasswordVC()
 //        let vc = InputPasswordAppVC()
         self.navigationController?.pushViewController(vc, animated: true)
@@ -44,6 +44,5 @@ class PasswordMainVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
     
     func setLayout(){
         searchTF.layer.cornerRadius = 10
-        btnAdd.layer.cornerRadius = 20
     }
 }

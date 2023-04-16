@@ -7,12 +7,10 @@
 
 import UIKit
 
-class CategoryMainVC: UIViewController {
+class CategoryMainVC: BaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
 
