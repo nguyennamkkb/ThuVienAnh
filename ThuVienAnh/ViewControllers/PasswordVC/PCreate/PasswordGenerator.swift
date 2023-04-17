@@ -9,24 +9,31 @@ import UIKit
 
 class PasswordGenerator: BaseVC {
 
+    
+    @IBOutlet var inputPasswordView: UIView!
+    @IBOutlet var azLabel: UILabel!
+    @IBOutlet var a09Label: UILabel!
+    @IBOutlet var AZLabel: UILabel!
+    @IBOutlet var specialLabel: UILabel!
+    
+    
+    
+      
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .green
         // Do any additional setup after loading the view.
+        setLayoutPasswordGenerator()
     }
-
+    func setLayoutPasswordGenerator(){
+        azLabel.layer.cornerRadius = 10
+        a09Label.layer.cornerRadius = 10
+        AZLabel.layer.cornerRadius = 10
+        specialLabel.layer.cornerRadius = 10
+        inputPasswordView.layer.cornerRadius = 10
+    }
     @IBAction func btnClosePressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

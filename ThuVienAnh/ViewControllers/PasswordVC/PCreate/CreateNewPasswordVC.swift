@@ -50,6 +50,6 @@ class CreateNewPasswordVC: BaseVC {
     }
     
     @IBAction func btnSavePressed(_ sender: UIButton) {
-        showAlert()
+        showAlert(message: "Thông báo!")
     }
 }

@@ -87,7 +87,7 @@ class InputPasswordAppVC: BaseVC {
             dot2.image = UIImage(named: "ic-dot-red")
             dot3.image = UIImage(named: "ic-dot-red")
             dot4.image = UIImage(named: "ic-dot-red")
-            showAlert()
+            showMessage()
             
         }else {
             print("pass")

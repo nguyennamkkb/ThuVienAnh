@@ -51,7 +51,7 @@
 		0B2F003929E99B8C007DED42 /* PItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PItemCell.swift; sourceTree = "<group>"; };
 		0B2F003A29E99B8C007DED42 /* PItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PItemCell.xib; sourceTree = "<group>"; };
 		0B2F003E29E9A4E3007DED42 /* CreateNewPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPasswordVC.swift; sourceTree = "<group>"; };
-		0B3282F629EA2C0200474907 /* PasswordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGenerator.swift; sourceTree = "<group>"; };
+		0B3282F629EA2C0200474907 /* PasswordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGenerator.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		0B3282F729EA2C0200474907 /* PasswordGenerator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordGenerator.xib; sourceTree = "<group>"; };
 		0B3AEEF129EBD2B9009C206C /* CustomsAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomsAlertVC.swift; sourceTree = "<group>"; };
 		0B3AEEF229EBD2B9009C206C /* CustomsAlertVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomsAlertVC.xib; sourceTree = "<group>"; };

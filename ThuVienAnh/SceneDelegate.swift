@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowScense = (scene as? UIWindowScene) else { return }
         
-        let vc = CustomsAlertVC()
+        let vc = MainVC()
         
         let window = UIWindow(windowScene: windowScense)
         window.rootViewController = vc
