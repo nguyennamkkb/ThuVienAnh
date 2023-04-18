@@ -13,19 +13,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-//
-        CacheManager.shared.setPass(false)
         guard let windowScense = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: windowScense)
-
-//
-        if CacheManager.shared.isPass(){
-            setRootViewController(MainVC())
-        }else {
-            setRootViewController(InputPasswordAppVC())
-        }
-        
-        
+        setRootViewController(InputPasswordAppVC())
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -61,13 +51,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window?.makeKeyAndVisible()
             return
         }
-
         window.rootViewController = vc
         window.makeKeyAndVisible()
-    
     }
-    
-    
-    
+  
 }
 

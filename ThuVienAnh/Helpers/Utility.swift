@@ -9,21 +9,12 @@ import Foundation
 import UIKit
 
 public class Utility {
-    @objc static func topViewController() -> UIViewController{
-        return self.topViewControllerWithRootViewController(UIApplication.shared.keyWindow?.rootViewController ?? UIViewController())
-    }
-    
-    static func topViewControllerWithRootViewController(_ rootViewController: UIViewController) -> UIViewController{
-        if rootViewController is UITabBarController {
-            let tabbar = rootViewController as! UITabBarController
-            return self.topViewControllerWithRootViewController(tabbar.selectedViewController ?? UIViewController())
-        }else if rootViewController is UINavigationController{
-            let navi = rootViewController as! UINavigationController
-            return self.topViewControllerWithRootViewController(navi.visibleViewController  ?? UIViewController())
-        }else if let presentVC = rootViewController.presentedViewController{
-            return self.topViewControllerWithRootViewController(presentVC)
-        }else {
-            return rootViewController
+    class func gotoMainVC() {
+        guard let appdelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
         }
+        let nav = UINavigationController(rootViewController: MainVC())
+        appdelegate.window?.rootViewController = nav
+        appdelegate.window?.makeKeyAndVisible()
     }
 }

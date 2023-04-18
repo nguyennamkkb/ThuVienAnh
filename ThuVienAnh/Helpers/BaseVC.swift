@@ -69,7 +69,13 @@ class BaseVC: UIViewController {
             self.alertView.frame = CGRect(x: 40, y: -50, width: self.view.frame.width - 80, height: 44)
         }
     }
-    
+    func wrapRoot(vc: UIViewController){
+        guard let window = self.view.window else {return}
+        window.switchRootViewController(vc)
+    }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+          return .lightContent
+    }
 }
 extension BaseVC:UIGestureRecognizerDelegate {
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
