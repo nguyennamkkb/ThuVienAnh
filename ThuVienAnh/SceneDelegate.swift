@@ -13,15 +13,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        
+//
+        CacheManager.shared.setPass(false)
         guard let windowScense = (scene as? UIWindowScene) else { return }
-        
-        let vc = MainVC()
-        
-        let window = UIWindow(windowScene: windowScense)
-        window.rootViewController = vc
-        window.makeKeyAndVisible()
-        self.window = window
+        self.window = UIWindow(windowScene: windowScense)
+
+//
+        if CacheManager.shared.isPass(){
+            setRootViewController(MainVC())
+        }else {
+            setRootViewController(InputPasswordAppVC())
+        }
         
         
     }
@@ -53,6 +55,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
+    public func setRootViewController(_ vc: UIViewController, animated: Bool = true) {
+        guard let window = self.window else {
+            self.window?.rootViewController = vc
+            self.window?.makeKeyAndVisible()
+            return
+        }
+
+        window.rootViewController = vc
+        window.makeKeyAndVisible()
+    
+    }
+    
     
     
 }

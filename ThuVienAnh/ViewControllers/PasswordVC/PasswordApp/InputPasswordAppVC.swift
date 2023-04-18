@@ -111,9 +111,9 @@ class InputPasswordAppVC: BaseVC {
         }
     }
     func setlayout(){
-        self.alertView.alpha = 0
-        self.alertView.isHidden = true
-        alertView.layer.cornerRadius = 10
+        self.messageView.alpha = 0
+        self.messageView.isHidden = true
+        messageView.layer.cornerRadius = 10
     }
     
     @IBAction func btnFaceIdPressed(_ sender: UIButton) {
@@ -127,8 +127,14 @@ class InputPasswordAppVC: BaseVC {
                     DispatchQueue.main.async {
                         if success {
                            print("thanh cong")
+                            Common.isLogin = true
+                            CacheManager.shared.setPass(true)
+                            SceneDelegate().setRootViewController(MainVC(), animated: true)
+                            self.navigationController?.popToRootViewController(animated: true)
+                            
                         } else {
                             print("That bai")
+                            CacheManager.shared.setPass(false)
                         }
                     }
                 }

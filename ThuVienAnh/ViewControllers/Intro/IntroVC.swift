@@ -11,11 +11,6 @@ class IntroVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let mainVC = MainVC()
-        let introVC = IntroVC()
-        if !CacheManager.shared.isPass() {
-            self.navigationController?.pushViewController(introVC, animated: false)
-        }
     }
 
 
