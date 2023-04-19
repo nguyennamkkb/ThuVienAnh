@@ -53,12 +53,15 @@ class PasswordGenerator: BaseVC {
     }
     
     @IBAction func sliderChangeed(_ sender: UISlider) {
-        passwordLenght.text = String(Int(slider.value))
+        generatePassword()
     }
+
     
     @IBAction func inputPassword(_ sender: UITextField) {
+        checkInput()
+    }
+    func checkInput(){
         let pass = password.text ?? ""
-        let ch = pass.components(separatedBy: "")
         resetCheck()
         let capitalLetterRegEx  = ".*[A-Z]+.*"
         let checkLetter = NSPredicate(format:"SELF MATCHES %@", capitalLetterRegEx)
@@ -88,7 +91,21 @@ class PasswordGenerator: BaseVC {
         checkSpecialLbl.text = ""
         checkDigitLbl.text = ""
         checkLowerCaseLbl.text = ""
-        
     }
     
+    @IBAction func refreshPasswordPressed(_ sender: UIButton) {
+        generatePassword()
+    }
+    func generatePassword(){
+        let number: Int = Int(slider.value)
+        passwordLenght.text = String(number)
+        password.text =  Helper.shared.randomString(length: number)
+        checkInput()
+    }
+    
+    @IBAction func btnSavePressed(_ sender: UIButton) {
+        LocalStored.passwordGenerate = password.text ?? ""
+        self.dismissVC()
+        
+    }
 }

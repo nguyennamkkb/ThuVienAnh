@@ -7,6 +7,7 @@
 
 import UIKit
 import FittedSheets
+
 class CreateNewPasswordVC: BaseVC {
 
     @IBOutlet var titleView: UIView!
@@ -14,21 +15,25 @@ class CreateNewPasswordVC: BaseVC {
     @IBOutlet var passwordView: UIView!
     @IBOutlet var btnSave: UIButton!
     
-    @IBOutlet var generatePasswordView: UIView!
+    @IBOutlet var passwordTF: UITextField!
     
+    var dataCallback: String?
     
+    var passwordGenerate: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         setLayout()
+
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         // Hide the navigation bar on the this view controller
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
 
+        passwordTF.text = LocalStored.passwordGenerate
+    }
+   
     @IBAction func backToPasswordMainPressed(_ sender: UIButton) { 
         self.navigationController?.popViewController(animated: true)
     }
@@ -46,10 +51,12 @@ class CreateNewPasswordVC: BaseVC {
     @IBAction func generatePasswordPressed(_ sender: UIButton) {
         
         let vc = PasswordGenerator()
-        self.present(vc, animated: true, completion: nil)
+        self.pushVC(vc: vc)
+        
     }
     
     @IBAction func btnSavePressed(_ sender: UIButton) {
         showAlert(message: "Thông báo!")
     }
+
 }

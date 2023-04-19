@@ -27,6 +27,7 @@
 		0BA163E029E8DC2300FFB12A /* PhotoMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA163DE29E8DC2300FFB12A /* PhotoMainVC.swift */; };
 		0BA163E129E8DC2300FFB12A /* PhotoMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BA163DF29E8DC2300FFB12A /* PhotoMainVC.xib */; };
 		0BB33DFA29EE0AD900B281DE /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB33DF929EE0AD900B281DE /* Utility.swift */; };
+		0BC0C32529EEDA680009EAC1 /* LocalStored.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0C32429EEDA680009EAC1 /* LocalStored.swift */; };
 		0BEA4FE329EA479E001810D7 /* CreateNewPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BEA4FE229EA479E001810D7 /* CreateNewPasswordVC.xib */; };
 		0BEA4FE729EA5175001810D7 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA4FE529EA5175001810D7 /* IntroVC.swift */; };
 		0BEA4FE829EA5175001810D7 /* IntroVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BEA4FE629EA5175001810D7 /* IntroVC.xib */; };
@@ -69,6 +70,7 @@
 		0BA163DE29E8DC2300FFB12A /* PhotoMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMainVC.swift; sourceTree = "<group>"; };
 		0BA163DF29E8DC2300FFB12A /* PhotoMainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoMainVC.xib; sourceTree = "<group>"; };
 		0BB33DF929EE0AD900B281DE /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		0BC0C32429EEDA680009EAC1 /* LocalStored.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStored.swift; sourceTree = "<group>"; };
 		0BEA4FE229EA479E001810D7 /* CreateNewPasswordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateNewPasswordVC.xib; sourceTree = "<group>"; };
 		0BEA4FE529EA5175001810D7 /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
 		0BEA4FE629EA5175001810D7 /* IntroVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroVC.xib; sourceTree = "<group>"; };
@@ -318,6 +320,7 @@
 				0BEA4FEB29EA543F001810D7 /* Common.swift */,
 				0BEA4FF229EAAA96001810D7 /* BaseVC.swift */,
 				0BB33DF929EE0AD900B281DE /* Utility.swift */,
+				0BC0C32429EEDA680009EAC1 /* LocalStored.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BC0C32529EEDA680009EAC1 /* LocalStored.swift in Sources */,
 				0BEA4FF029EA9B28001810D7 /* InputPasswordAppVC.swift in Sources */,
 				0BEA4FF329EAAA96001810D7 /* BaseVC.swift in Sources */,
 				0B2F003B29E99B8C007DED42 /* PItemCell.swift in Sources */,

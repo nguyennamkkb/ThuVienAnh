@@ -15,8 +15,7 @@ class BaseVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setLayoutAlert()
-//        alertView.isHidden = true
-        // Do any additional setup after loading the view.
+
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -75,6 +74,17 @@ class BaseVC: UIViewController {
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
           return .lightContent
+    }
+    func dismissVC(animated: Bool = true) {
+        let vc = self.navigationController?.popViewController(animated: animated)
+        
+        if vc == nil {
+            dismiss(animated: animated, completion: nil)
+        }
+    }
+    func pushVC (vc: UIViewController){
+//        let vc = InputPasswordAppVC()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 extension BaseVC:UIGestureRecognizerDelegate {
