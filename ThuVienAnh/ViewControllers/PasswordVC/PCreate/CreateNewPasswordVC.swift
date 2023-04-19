@@ -65,7 +65,7 @@ class CreateNewPasswordVC: BaseVC {
             passwordData.category = "Websites"
             passwordData.status = 1
             passwordData.heart = 0
-            Common().updatePasswordStorage(passwordData)
+            Common().appendPasswordStorage(passwordData)
         }
     }
     

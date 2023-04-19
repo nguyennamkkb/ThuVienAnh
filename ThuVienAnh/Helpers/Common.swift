@@ -43,8 +43,12 @@ class Common {
             
         }
     }
-    public func updatePasswordStorage(_ passwordData: PasswordStorage) -> Void {
+    public func appendPasswordStorage(_ passwordData: PasswordStorage) -> Void {
         Common.passwordStorage.append(passwordData)
+        let JSONString = Mapper().toJSONString(Common.passwordStorage, prettyPrint: true)
+        CacheManager.shared.setPasswordStorage(value: JSONString)
+    }
+    public func updatePasswordStorage() -> Void {
         let JSONString = Mapper().toJSONString(Common.passwordStorage, prettyPrint: true)
         CacheManager.shared.setPasswordStorage(value: JSONString)
     }
