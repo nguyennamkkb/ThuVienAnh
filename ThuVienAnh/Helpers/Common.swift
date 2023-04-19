@@ -7,11 +7,14 @@
 
 import Foundation
 import UIKit
+import ObjectMapper
 
 class Common {
     public static var isLogin: Bool = false
     public static var key_Pass: String = "isPass"
     public static var key_passwordApp: String = "passwordApp"
+    public static var key_passwordStorage: String = "passwordStorage"
+    public static var passwordStorage = [PasswordStorage]()
     enum alertStatus {
         case success, error, warning
         func getStatus() -> Int {
@@ -39,5 +42,10 @@ class Common {
         if !Common.isLogin {
             
         }
+    }
+    public func updatePasswordStorage(_ passwordData: PasswordStorage) -> Void {
+        Common.passwordStorage.append(passwordData)
+        let JSONString = Mapper().toJSONString(Common.passwordStorage, prettyPrint: true)
+        CacheManager.shared.setPasswordStorage(value: JSONString)
     }
 }

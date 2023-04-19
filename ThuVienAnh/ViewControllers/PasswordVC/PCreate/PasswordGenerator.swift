@@ -26,7 +26,7 @@ class PasswordGenerator: BaseVC {
     @IBOutlet weak var checkLowerCaseLbl: UILabel!
     @IBOutlet weak var checkSpecialLbl: UILabel!
     
-    
+    var passwordCallback: ((String) -> Void)?
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .green
@@ -49,6 +49,7 @@ class PasswordGenerator: BaseVC {
         inputPasswordView.layer.cornerRadius = 10
     }
     @IBAction func btnClosePressed(_ sender: UIButton) {
+        passwordCallback?(password.text ?? "")
         dismiss(animated: true, completion: nil)
     }
     
@@ -104,8 +105,8 @@ class PasswordGenerator: BaseVC {
     }
     
     @IBAction func btnSavePressed(_ sender: UIButton) {
-        LocalStored.passwordGenerate = password.text ?? ""
-        self.dismissVC()
+        passwordCallback?(password.text ?? "")
+        dismiss(animated: true, completion: nil)
         
     }
 }

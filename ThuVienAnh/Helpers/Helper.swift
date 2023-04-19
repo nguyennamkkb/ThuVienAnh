@@ -9,6 +9,7 @@ import Foundation
 import Kingfisher
 import UIKit
 class Helper {
+    let timestamp = NSDate().timeIntervalSince1970
     public static let shared = Helper()
     func loadImageFromUrlWithKF(urlString: String?) -> UIImageView {
         let imageView = UIImageView()
@@ -20,4 +21,5 @@ class Helper {
       let letters = "abcdef456ghijkJKLMNOlmno()pqrsDEFtuvwxyz!$#@/_*+-ABCGHIPQRSTUVWX&^%YZ0123789"
       return String((0..<length).map{ _ in letters.randomElement()! })
     }
+   
 }

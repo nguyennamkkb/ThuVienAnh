@@ -38,6 +38,7 @@
 		0BEA4FF329EAAA96001810D7 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA4FF229EAAA96001810D7 /* BaseVC.swift */; };
 		81348056D97FAA8E13D4934E /* Pods_ThuVienAnh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BCCC95D179234224E94E0F9 /* Pods_ThuVienAnh.framework */; };
 		D922BF0C29E8EBBA001E3E26 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D922BF0B29E8EBBA001E3E26 /* Helper.swift */; };
+		D9A9D1F829EFE51F0099281E /* PasswordStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9D1F729EFE51F0099281E /* PasswordStorage.swift */; };
 		D9BE5AA229E96CAF0044CE17 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BE5AA129E96CAE0044CE17 /* Extensions.swift */; };
 		D9CEDE5029E80AFA00A7C846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CEDE4F29E80AFA00A7C846 /* AppDelegate.swift */; };
 		D9CEDE5229E80AFA00A7C846 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CEDE5129E80AFA00A7C846 /* SceneDelegate.swift */; };
@@ -91,6 +92,7 @@
 		D922BF1429E90F09001E3E26 /* SFPRODISPLAYHEAVYITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYHEAVYITALIC.OTF; sourceTree = "<group>"; };
 		D922BF1529E90F09001E3E26 /* SFPRODISPLAYTHINITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYTHINITALIC.OTF; sourceTree = "<group>"; };
 		D922BF1629E90F09001E3E26 /* SFPRODISPLAYLIGHTITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYLIGHTITALIC.OTF; sourceTree = "<group>"; };
+		D9A9D1F729EFE51F0099281E /* PasswordStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStorage.swift; sourceTree = "<group>"; };
 		D9BE5AA129E96CAE0044CE17 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D9CEDE4C29E80AFA00A7C846 /* ThuVienAnh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThuVienAnh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9CEDE4F29E80AFA00A7C846 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -241,6 +243,14 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
+		D9A9D1F629EFE4EA0099281E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9A9D1F729EFE51F0099281E /* PasswordStorage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D9CEDE4329E80AFA00A7C846 = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +272,7 @@
 		D9CEDE4E29E80AFA00A7C846 /* ThuVienAnh */ = {
 			isa = PBXGroup;
 			children = (
+				D9A9D1F629EFE4EA0099281E /* Models */,
 				D922BF0D29E90EFF001E3E26 /* fonts */,
 				D9CEDE7529E8164700A7C846 /* Helpers */,
 				D9CEDE7029E815CD00A7C846 /* Resources */,
@@ -458,6 +469,7 @@
 				0BC0C32529EEDA680009EAC1 /* LocalStored.swift in Sources */,
 				0BEA4FF029EA9B28001810D7 /* InputPasswordAppVC.swift in Sources */,
 				0BEA4FF329EAAA96001810D7 /* BaseVC.swift in Sources */,
+				D9A9D1F829EFE51F0099281E /* PasswordStorage.swift in Sources */,
 				0B2F003B29E99B8C007DED42 /* PItemCell.swift in Sources */,
 				0BEA4FEA29EA53C8001810D7 /* CacheManager.swift in Sources */,
 				0BA163D829E8DBF900FFB12A /* SettingMainVC.swift in Sources */,

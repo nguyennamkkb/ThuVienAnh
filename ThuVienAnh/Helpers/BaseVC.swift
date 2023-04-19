@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BaseVC: UIViewController {
+class BaseVC: UIViewController, UINavigationControllerDelegate {
     
     let alertView = UIView()
     var messageLabel = UILabel()
@@ -19,20 +19,13 @@ class BaseVC: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        // Hide the navigation bar on the this view controller
-        self.navigationController?.setNavigationBarHidden(true, animated: animated)
-
+        navigationController?.setNavigationBarHidden(true, animated: animated)
     }
-    
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
-        // Show the navigation bar on other view controllers
-        self.navigationController?.setNavigationBarHidden(false, animated: animated)
-//        UIView.animate(withDuration: 0.3) {
-//            self.alertView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.alertViewHeight)
-//        }
+
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     func setLayoutAlert(){
         alertView.layer.zPosition = 999

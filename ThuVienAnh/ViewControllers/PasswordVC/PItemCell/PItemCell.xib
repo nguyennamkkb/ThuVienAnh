@@ -78,16 +78,30 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTJ-KW-SdV">
                                         <rect key="frame" x="0.0" y="12.666666666666664" width="80" height="40"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-copy" translatesAutoresizingMaskIntoConstraints="NO" id="0oR-8l-inx">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpE-J9-ky8" userLabel="copy">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="40" id="4aa-6E-QKC"/>
-                                                    <constraint firstAttribute="height" constant="40" id="PMu-zE-L6d"/>
+                                                    <constraint firstAttribute="height" constant="40" id="5gq-hv-1Gk"/>
+                                                    <constraint firstAttribute="width" constant="40" id="BMX-RH-WGQ"/>
                                                 </constraints>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-more-vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ycp-Q0-ws5">
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="ic-copy"/>
+                                                <connections>
+                                                    <action selector="btnCopyPreessed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="lGx-ev-pgX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGx-z4-18w" userLabel="more">
                                                 <rect key="frame" x="40" y="0.0" width="40" height="40"/>
-                                            </imageView>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="tuq-xL-vfv"/>
+                                                    <constraint firstAttribute="width" constant="40" id="wHm-Sa-JkH"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="ic-more-vertical"/>
+                                                <connections>
+                                                    <action selector="btnMorePressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Q0N-UO-BoB"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -127,6 +141,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="dateLbl" destination="o8L-aQ-nr5" id="K0D-nY-GUh"/>
+                <outlet property="nameLbl" destination="XB0-m1-x4v" id="nsE-4w-irc"/>
+                <outlet property="passwordLbl" destination="vLJ-DA-cfU" id="SLP-kX-AmE"/>
+            </connections>
             <point key="canvasLocation" x="406.87022900763355" y="-57.74647887323944"/>
         </tableViewCell>
     </objects>

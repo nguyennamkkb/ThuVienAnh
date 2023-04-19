@@ -25,4 +25,11 @@ class CacheManager {
     func setPassword(value: String?) {
         return defaults.setValue(value ?? "", forKey: Common.key_passwordApp)
     }
+    
+    func getPasswordStorage() -> String {
+        return defaults.string(forKey: Common.key_passwordStorage) ?? ""
+    }
+    func setPasswordStorage(value: String?) {
+        return defaults.setValue(value ?? "", forKey: Common.key_passwordStorage)
+    }
 }

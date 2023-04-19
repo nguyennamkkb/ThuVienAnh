@@ -12,6 +12,7 @@ class MainVC: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.interactivePopGestureRecognizer?.delegate = nil
 
         //passwordVC
         let passwordVC = PasswordMainVC()
