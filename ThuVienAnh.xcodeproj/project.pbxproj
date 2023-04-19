@@ -14,6 +14,8 @@
 		0B3282F929EA2C0200474907 /* PasswordGenerator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3282F729EA2C0200474907 /* PasswordGenerator.xib */; };
 		0B3AEEF329EBD2B9009C206C /* CustomsAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3AEEF129EBD2B9009C206C /* CustomsAlertVC.swift */; };
 		0B3AEEF429EBD2B9009C206C /* CustomsAlertVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3AEEF229EBD2B9009C206C /* CustomsAlertVC.xib */; };
+		0B47665629F0433B00E6B115 /* ActionMoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B47665429F0433B00E6B115 /* ActionMoreVC.swift */; };
+		0B47665729F0433B00E6B115 /* ActionMoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B47665529F0433B00E6B115 /* ActionMoreVC.xib */; };
 		0BA163C929E8D88900FFB12A /* ic-category.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BA163C529E8D88900FFB12A /* ic-category.png */; };
 		0BA163CA29E8D88900FFB12A /* ic-password.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BA163C629E8D88900FFB12A /* ic-password.png */; };
 		0BA163CB29E8D88900FFB12A /* ic-photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BA163C729E8D88900FFB12A /* ic-photo.png */; };
@@ -58,6 +60,8 @@
 		0B3282F729EA2C0200474907 /* PasswordGenerator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordGenerator.xib; sourceTree = "<group>"; };
 		0B3AEEF129EBD2B9009C206C /* CustomsAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomsAlertVC.swift; sourceTree = "<group>"; };
 		0B3AEEF229EBD2B9009C206C /* CustomsAlertVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomsAlertVC.xib; sourceTree = "<group>"; };
+		0B47665429F0433B00E6B115 /* ActionMoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionMoreVC.swift; sourceTree = "<group>"; };
+		0B47665529F0433B00E6B115 /* ActionMoreVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionMoreVC.xib; sourceTree = "<group>"; };
 		0BA163C529E8D88900FFB12A /* ic-category.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-category.png"; sourceTree = "<group>"; };
 		0BA163C629E8D88900FFB12A /* ic-password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-password.png"; sourceTree = "<group>"; };
 		0BA163C729E8D88900FFB12A /* ic-photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-photo.png"; sourceTree = "<group>"; };
@@ -161,6 +165,8 @@
 				0B2F003829E99B64007DED42 /* PItemCell */,
 				0BA163D229E8DBE900FFB12A /* PasswordMainVC.swift */,
 				0BA163D329E8DBE900FFB12A /* PasswordMainVC.xib */,
+				0B47665429F0433B00E6B115 /* ActionMoreVC.swift */,
+				0B47665529F0433B00E6B115 /* ActionMoreVC.xib */,
 			);
 			path = PasswordVC;
 			sourceTree = "<group>";
@@ -410,6 +416,7 @@
 				D9CEDE5C29E80AFC00A7C846 /* LaunchScreen.storyboard in Resources */,
 				0B3AEEF429EBD2B9009C206C /* CustomsAlertVC.xib in Resources */,
 				0BA163CB29E8D88900FFB12A /* ic-photo.png in Resources */,
+				0B47665729F0433B00E6B115 /* ActionMoreVC.xib in Resources */,
 				0BA163E129E8DC2300FFB12A /* PhotoMainVC.xib in Resources */,
 				D9CEDE5929E80AFC00A7C846 /* Assets.xcassets in Resources */,
 				0BA163CA29E8D88900FFB12A /* ic-password.png in Resources */,
@@ -487,6 +494,7 @@
 				0BA163DC29E8DC1000FFB12A /* CategoryMainVC.swift in Sources */,
 				0BEA4FEC29EA543F001810D7 /* Common.swift in Sources */,
 				0BA163D429E8DBE900FFB12A /* PasswordMainVC.swift in Sources */,
+				0B47665629F0433B00E6B115 /* ActionMoreVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

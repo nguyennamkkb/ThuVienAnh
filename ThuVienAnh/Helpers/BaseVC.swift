@@ -30,7 +30,7 @@ class BaseVC: UIViewController, UINavigationControllerDelegate {
     func setLayoutAlert(){
         alertView.layer.zPosition = 999
         view.addSubview(alertView)
-        alertView.backgroundColor = UIColor(hexString: "#0A0A0A")
+        alertView.backgroundColor = UIColor(hex: "#0A0A0A")
         alertView.frame = CGRect(x: 40, y: -50, width: self.view.frame.width - 80, height: 44)
         alertView.layer.cornerRadius = 15
         messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.width - 80, height: 44))

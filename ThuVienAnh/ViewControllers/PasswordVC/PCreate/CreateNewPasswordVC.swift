@@ -20,15 +20,15 @@ class CreateNewPasswordVC: BaseVC {
     @IBOutlet var usernameTF: UITextField!
     
     var dataCallback: String?
-
+    
     var passwordGenerate: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
         setLayout()
-       
+        
     }
-    @IBAction func backToPasswordMainPressed(_ sender: UIButton) { 
+    @IBAction func backToPasswordMainPressed(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
     func setLayout(){
@@ -36,12 +36,10 @@ class CreateNewPasswordVC: BaseVC {
         accountView.layer.cornerRadius = 10
         passwordView.layer.cornerRadius = 10
         btnSave.layer.cornerRadius = 10
-
-        
     }
     
     @IBAction func generatePasswordPressed(_ sender: UIButton) {
-    
+        
         let vc = PasswordGenerator()
         vc.passwordCallback = {
             data in
@@ -52,6 +50,11 @@ class CreateNewPasswordVC: BaseVC {
     }
     
     @IBAction func btnSavePressed(_ sender: UIButton) {
+        storeData()
+        self.navigationController?.popViewController(animated: true)
+        
+    }
+    func storeData(){
         let passwordData: PasswordStorage = PasswordStorage()
         if usernameTF.text != "", passwordTF.text != "", titleTF.text != "" {
             passwordData.id = Date().milliseconds
@@ -61,10 +64,9 @@ class CreateNewPasswordVC: BaseVC {
             passwordData.pass = passwordTF.text
             passwordData.category = "Websites"
             passwordData.status = 1
+            passwordData.heart = 0
             Common().updatePasswordStorage(passwordData)
-            showAlert(message: "Thành công!")
         }
-        
     }
-
+    
 }

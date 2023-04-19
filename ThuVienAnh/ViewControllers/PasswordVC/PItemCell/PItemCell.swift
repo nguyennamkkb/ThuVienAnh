@@ -13,6 +13,8 @@ class PItemCell: UITableViewCell {
     @IBOutlet var nameLbl: UILabel!
     @IBOutlet var passwordLbl: UILabel!
     var item = PasswordStorage()
+    var actionCopy: ClosureAction?
+    var actionMore: ClosureAction?
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -28,8 +30,10 @@ class PItemCell: UITableViewCell {
     }
     
     @IBAction func btnMorePressed(_ sender: UIButton) {
+        actionMore?()
+        
     }
     @IBAction func btnCopyPreessed(_ sender: UIButton) {
-        UIPasteboard.general.string = self.item.pass
+        actionCopy?()
     }
 }

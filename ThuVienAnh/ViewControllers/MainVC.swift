@@ -40,7 +40,7 @@ class MainVC: UITabBarController {
         setLayout()
     }
     func setLayout(){
-        tabBar.tintColor = UIColor(hexString: "#00DAC0")
+        tabBar.tintColor = UIColor(hex: "#00DAC0")
         tabBar.barTintColor =  .white
     }
     

@@ -17,6 +17,7 @@ class PasswordStorage: Mappable {
     var name: String?
     var pass: String?
     var status: Int?
+    var heart: Int?
     init(){
     
     }
@@ -31,5 +32,6 @@ class PasswordStorage: Mappable {
         name <- map["name"]
         pass <- map["pass"]
         status <- map["status"]
+        heart <- map["heart"]
     }
 }
