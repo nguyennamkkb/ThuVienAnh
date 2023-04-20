@@ -11,20 +11,22 @@ class BaseVC: UIViewController, UINavigationControllerDelegate {
     
     let alertView = UIView()
     var messageLabel = UILabel()
-
+    var actionCancel: ClosureAction?
+    var actionOK: ClosureAction?
     override func viewDidLoad() {
         super.viewDidLoad()
         setLayoutAlert()
-
+        
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
-
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-
+        
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     func setLayoutAlert(){
@@ -66,7 +68,7 @@ class BaseVC: UIViewController, UINavigationControllerDelegate {
         window.switchRootViewController(vc)
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
-          return .lightContent
+        return .lightContent
     }
     func dismissVC(animated: Bool = true) {
         let vc = self.navigationController?.popViewController(animated: animated)
@@ -76,8 +78,26 @@ class BaseVC: UIViewController, UINavigationControllerDelegate {
         }
     }
     func pushVC (vc: UIViewController){
-//        let vc = InputPasswordAppVC()
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    func showAlertAction(message: String) {
+        let alertController = UIAlertController(title: "Notification", message: message, preferredStyle: .alert)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alertController.addAction(cancelAction)
+        
+        let abc = UIAlertAction(title: "OK", style: .default) { [self] _ in
+            actionOK?()
+        }
+
+        alertController.addAction(abc)
+        present(alertController, animated: true, completion: nil)
+    }
+    func shareText(text: String) {
+        let textShare = [ text ]
+        let activityViewController = UIActivityViewController(activityItems: textShare , applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        self.present(activityViewController, animated: true, completion: nil)
     }
 }
 extension BaseVC:UIGestureRecognizerDelegate {

@@ -18,6 +18,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActionMoreVC" customModule="ThuVienAnh" customModuleProvider="target">
             <connections>
+                <outlet property="btnHeart" destination="zwK-ab-gsH" id="ybV-Dn-JeD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -60,8 +61,13 @@
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="b88-Xf-cWo"/>
                                 <constraint firstAttribute="width" constant="40" id="epX-OZ-z5r"/>
                             </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" image="ic-heart"/>
+                            <state key="normal" image="heart" catalog="system"/>
+                            <buttonConfiguration key="configuration" style="plain" image="heart.fill" catalog="system"/>
+                            <connections>
+                                <action selector="btnHeartPressed:" destination="-1" eventType="touchUpInside" id="O1c-OT-TDF"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -107,6 +113,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePa-GK-4Ik" userLabel="btnShare">
                                             <rect key="frame" x="0.0" y="0.0" width="353" height="45"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <connections>
+                                                <action selector="btnSharePressed:" destination="-1" eventType="touchUpInside" id="Wk2-iX-5vo"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -197,8 +206,9 @@
     </objects>
     <resources>
         <image name="arrowshape.turn.up.forward" catalog="system" width="128" height="104"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="ic-back-left" width="40" height="40"/>
-        <image name="ic-heart" width="35" height="35"/>
         <image name="trash" catalog="system" width="117" height="128"/>
     </resources>
 </document>

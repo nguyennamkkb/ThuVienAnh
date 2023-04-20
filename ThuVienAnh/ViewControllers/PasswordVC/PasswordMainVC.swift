@@ -27,7 +27,7 @@ class PasswordMainVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
         tableView.register(nib, forCellReuseIdentifier: "PItemCell")
         
         getDataStatusShow()
-//        print(tableData.toJSON())
+        //        print(tableData.toJSON())
     }
     override func viewDidAppear(_ animated: Bool) {
         self.tableData = Common.passwordStorage
@@ -40,9 +40,10 @@ class PasswordMainVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
     
     @IBAction func searchNameChanged(_ sender: UITextField) {
         let value = keySearch.text ?? ""
-        //        let arrayResults = [PasswordStorage]()
+
         if value == "" {
             tableData = Common.passwordStorage
+            getDataStatusShow()
             
         }else {
             let filter = tableData.filter { $0.name?.contains(value) ?? false }
@@ -54,7 +55,7 @@ class PasswordMainVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
         
         
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableData.count
     }
@@ -70,25 +71,38 @@ class PasswordMainVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
             UIPasteboard.general.string =  item.pass
             self.showAlert(message:item.pass)
         }
-        
         cell.actionMore = { [weak self] in
-            guard self != nil else { return }
+            guard let self = self else { return }
             let vc = ActionMoreVC()
             let sheet = SheetViewController(controller: vc, sizes: [.fixed(220)])
-            self?.present(sheet, animated: true)
-            vc.onDelete = {
-                [weak self] in
-                let newItem = self?.tableData[index]
-                newItem?.status = 0
-                Common.passwordStorage[index] = newItem ?? PasswordStorage()
-                Common().updatePasswordStorage()
-                self?.tableData = Common.passwordStorage
-                
-                print("newItem \(Common.passwordStorage.toJSON())")
-                DispatchQueue.main.async {
-                    self?.getDataStatusShow()
-                    self?.tableView.reloadData()
+            self.present(sheet, animated: true)
+            vc.bindData(item: item)
+            vc.onDelete = { [weak self] in
+                guard let self = self else { return }
+                self.showAlertAction(message: "Delete item: \(item.name ?? "")")
+                self.actionOK = { [weak self] in
+                    guard let self = self else { return }
+                    let newItem = self.tableData[index]
+                    newItem.status = 0
+                    self.updatePasswordStorage(item: newItem)
+                    self.updateTable()
                 }
+                
+            }
+            vc.onShare = {[weak self] in
+                guard let self = self else {return}
+                let text: String = """
+                username: \(item.name ?? "")
+                password: \(item.pass ?? "")
+                """
+                self.shareText(text: text)
+            }
+            vc.onHeart = {
+                [weak self] item in
+                guard let self = self else {return}
+                self.updatePasswordStorage(item: item)
+                self.updateTable()
+//                print(self.tableData.toJSONString())
             }
         }
         
@@ -107,5 +121,19 @@ class PasswordMainVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
     func getDataStatusShow(){
         let filter = tableData.filter { $0.status == 1 }
         tableData = filter
+    }
+    func updatePasswordStorage(item: PasswordStorage) {
+        if let index = Common.passwordStorage.firstIndex(where: { $0.id == item.id }) {
+            Common.passwordStorage[index] = item
+        }
+        Common().updatePasswordStorage()
+        
+    }
+    func updateTable(){
+        self.tableData = Common.passwordStorage
+        self.getDataStatusShow()
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
 }
