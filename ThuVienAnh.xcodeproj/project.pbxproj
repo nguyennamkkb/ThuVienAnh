@@ -41,6 +41,9 @@
 		81348056D97FAA8E13D4934E /* Pods_ThuVienAnh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BCCC95D179234224E94E0F9 /* Pods_ThuVienAnh.framework */; };
 		D922BF0C29E8EBBA001E3E26 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D922BF0B29E8EBBA001E3E26 /* Helper.swift */; };
 		D9A9D1F829EFE51F0099281E /* PasswordStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9D1F729EFE51F0099281E /* PasswordStorage.swift */; };
+		D9B16B8629F1510000940DA8 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B16B8529F1510000940DA8 /* Category.swift */; };
+		D9B16B8929F1532B00940DA8 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B16B8729F1532B00940DA8 /* CategoryCell.swift */; };
+		D9B16B8A29F1532B00940DA8 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9B16B8829F1532B00940DA8 /* CategoryCell.xib */; };
 		D9BE5AA229E96CAF0044CE17 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BE5AA129E96CAE0044CE17 /* Extensions.swift */; };
 		D9CEDE5029E80AFA00A7C846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CEDE4F29E80AFA00A7C846 /* AppDelegate.swift */; };
 		D9CEDE5229E80AFA00A7C846 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CEDE5129E80AFA00A7C846 /* SceneDelegate.swift */; };
@@ -97,6 +100,9 @@
 		D922BF1529E90F09001E3E26 /* SFPRODISPLAYTHINITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYTHINITALIC.OTF; sourceTree = "<group>"; };
 		D922BF1629E90F09001E3E26 /* SFPRODISPLAYLIGHTITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYLIGHTITALIC.OTF; sourceTree = "<group>"; };
 		D9A9D1F729EFE51F0099281E /* PasswordStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStorage.swift; sourceTree = "<group>"; };
+		D9B16B8529F1510000940DA8 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		D9B16B8729F1532B00940DA8 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		D9B16B8829F1532B00940DA8 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		D9BE5AA129E96CAE0044CE17 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D9CEDE4C29E80AFA00A7C846 /* ThuVienAnh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThuVienAnh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9CEDE4F29E80AFA00A7C846 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -185,6 +191,8 @@
 			children = (
 				0BA163DA29E8DC1000FFB12A /* CategoryMainVC.swift */,
 				0BA163DB29E8DC1000FFB12A /* CategoryMainVC.xib */,
+				D9B16B8729F1532B00940DA8 /* CategoryCell.swift */,
+				D9B16B8829F1532B00940DA8 /* CategoryCell.xib */,
 			);
 			path = CategoryVC;
 			sourceTree = "<group>";
@@ -253,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				D9A9D1F729EFE51F0099281E /* PasswordStorage.swift */,
+				D9B16B8529F1510000940DA8 /* Category.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -417,6 +426,7 @@
 				0B3AEEF429EBD2B9009C206C /* CustomsAlertVC.xib in Resources */,
 				0BA163CB29E8D88900FFB12A /* ic-photo.png in Resources */,
 				0B47665729F0433B00E6B115 /* ActionMoreVC.xib in Resources */,
+				D9B16B8A29F1532B00940DA8 /* CategoryCell.xib in Resources */,
 				0BA163E129E8DC2300FFB12A /* PhotoMainVC.xib in Resources */,
 				D9CEDE5929E80AFC00A7C846 /* Assets.xcassets in Resources */,
 				0BA163CA29E8D88900FFB12A /* ic-password.png in Resources */,
@@ -484,9 +494,11 @@
 				D9CEDE5029E80AFA00A7C846 /* AppDelegate.swift in Sources */,
 				D9CEDE6E29E813A000A7C846 /* MainVC.swift in Sources */,
 				0B3AEEF329EBD2B9009C206C /* CustomsAlertVC.swift in Sources */,
+				D9B16B8929F1532B00940DA8 /* CategoryCell.swift in Sources */,
 				0BB33DFA29EE0AD900B281DE /* Utility.swift in Sources */,
 				0BEA4FE729EA5175001810D7 /* IntroVC.swift in Sources */,
 				D9CEDE5229E80AFA00A7C846 /* SceneDelegate.swift in Sources */,
+				D9B16B8629F1510000940DA8 /* Category.swift in Sources */,
 				0BA163E029E8DC2300FFB12A /* PhotoMainVC.swift in Sources */,
 				0B3282F829EA2C0200474907 /* PasswordGenerator.swift in Sources */,
 				D9BE5AA229E96CAF0044CE17 /* Extensions.swift in Sources */,
