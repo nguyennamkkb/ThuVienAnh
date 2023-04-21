@@ -16,7 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         IQKeyboardManager.shared.enable = true
-        Common.passwordStorage = Mapper<PasswordStorage>().mapArray(JSONString: CacheManager.shared.getPasswordStorage()) ?? Common.passwordStorage
+        Common.passwordStorage = Mapper<PasswordStorage>().mapArray(JSONString: CacheManager.shared.getPasswordStorage()) ?? [PasswordStorage]()
+        Common.category = Mapper<Category>().mapArray(JSONString: CacheManager.shared.getCategory()) ?? [Category]()
         return true
     }
 

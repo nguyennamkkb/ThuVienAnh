@@ -19,6 +19,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryMainVC" customModule="ThuVienAnh" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="1dk-5g-T1m" id="T6u-Mp-sUc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -115,6 +116,20 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ae-Ue-xPd">
+                            <rect key="frame" x="295" y="5" width="58" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="58" id="Xsk-H9-73N"/>
+                                <constraint firstAttribute="height" constant="30" id="vdr-wR-Dcj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="18"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title=" Add" image="plus.app" catalog="system"/>
+                            <connections>
+                                <action selector="btnAddCategory:" destination="-1" eventType="touchUpInside" id="bYI-g1-OTF"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -123,16 +138,18 @@
                         <constraint firstItem="Ckh-oP-ciM" firstAttribute="top" secondItem="1ax-8B-CYi" secondAttribute="top" id="Qk2-or-dbu"/>
                         <constraint firstAttribute="bottom" secondItem="Ckh-oP-ciM" secondAttribute="bottom" id="W9N-ag-qVl"/>
                         <constraint firstAttribute="trailing" secondItem="Ckh-oP-ciM" secondAttribute="trailing" id="XND-Qw-yS0"/>
+                        <constraint firstItem="1Ae-Ue-xPd" firstAttribute="centerY" secondItem="1ax-8B-CYi" secondAttribute="centerY" id="ZIO-LZ-Z7O"/>
                         <constraint firstItem="Ckh-oP-ciM" firstAttribute="leading" secondItem="1ax-8B-CYi" secondAttribute="leading" id="fVU-0Z-sKd"/>
+                        <constraint firstAttribute="trailing" secondItem="1Ae-Ue-xPd" secondAttribute="trailing" id="xBG-c3-JNe"/>
                     </constraints>
                 </view>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1dk-5g-T1m">
-                    <rect key="frame" x="20" y="269" width="373" height="100"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1dk-5g-T1m">
+                    <rect key="frame" x="20" y="269" width="373" height="130"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="100" id="HCE-Oo-Ouq"/>
+                        <constraint firstAttribute="height" constant="130" id="HCE-Oo-Ouq"/>
                     </constraints>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gRR-Mf-UaJ">
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gRR-Mf-UaJ">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -169,6 +186,7 @@
     <resources>
         <image name="BG" width="375" height="812"/>
         <image name="ic-search-20" width="20" height="20"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

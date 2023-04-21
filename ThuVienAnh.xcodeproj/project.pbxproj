@@ -14,6 +14,10 @@
 		0B3282F929EA2C0200474907 /* PasswordGenerator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3282F729EA2C0200474907 /* PasswordGenerator.xib */; };
 		0B3AEEF329EBD2B9009C206C /* CustomsAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3AEEF129EBD2B9009C206C /* CustomsAlertVC.swift */; };
 		0B3AEEF429EBD2B9009C206C /* CustomsAlertVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3AEEF229EBD2B9009C206C /* CustomsAlertVC.xib */; };
+		0B464DF729F207500088D2E1 /* SelectCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B464DF529F207500088D2E1 /* SelectCategoryCell.swift */; };
+		0B464DF829F207500088D2E1 /* SelectCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B464DF629F207500088D2E1 /* SelectCategoryCell.xib */; };
+		0B464DFB29F208270088D2E1 /* SelectCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B464DF929F208270088D2E1 /* SelectCategoryVC.swift */; };
+		0B464DFC29F208270088D2E1 /* SelectCategoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B464DFA29F208270088D2E1 /* SelectCategoryVC.xib */; };
 		0B47665629F0433B00E6B115 /* ActionMoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B47665429F0433B00E6B115 /* ActionMoreVC.swift */; };
 		0B47665729F0433B00E6B115 /* ActionMoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B47665529F0433B00E6B115 /* ActionMoreVC.xib */; };
 		0BA163C929E8D88900FFB12A /* ic-category.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BA163C529E8D88900FFB12A /* ic-category.png */; };
@@ -38,6 +42,8 @@
 		0BEA4FF029EA9B28001810D7 /* InputPasswordAppVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA4FEE29EA9B28001810D7 /* InputPasswordAppVC.swift */; };
 		0BEA4FF129EA9B28001810D7 /* InputPasswordAppVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BEA4FEF29EA9B28001810D7 /* InputPasswordAppVC.xib */; };
 		0BEA4FF329EAAA96001810D7 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA4FF229EAAA96001810D7 /* BaseVC.swift */; };
+		0BFC36FB29F17DD800A347E5 /* CreateCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC36F929F17DD800A347E5 /* CreateCategory.swift */; };
+		0BFC36FC29F17DD800A347E5 /* CreateCategory.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC36FA29F17DD800A347E5 /* CreateCategory.xib */; };
 		81348056D97FAA8E13D4934E /* Pods_ThuVienAnh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BCCC95D179234224E94E0F9 /* Pods_ThuVienAnh.framework */; };
 		D922BF0C29E8EBBA001E3E26 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D922BF0B29E8EBBA001E3E26 /* Helper.swift */; };
 		D9A9D1F829EFE51F0099281E /* PasswordStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A9D1F729EFE51F0099281E /* PasswordStorage.swift */; };
@@ -63,6 +69,10 @@
 		0B3282F729EA2C0200474907 /* PasswordGenerator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordGenerator.xib; sourceTree = "<group>"; };
 		0B3AEEF129EBD2B9009C206C /* CustomsAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomsAlertVC.swift; sourceTree = "<group>"; };
 		0B3AEEF229EBD2B9009C206C /* CustomsAlertVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomsAlertVC.xib; sourceTree = "<group>"; };
+		0B464DF529F207500088D2E1 /* SelectCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryCell.swift; sourceTree = "<group>"; };
+		0B464DF629F207500088D2E1 /* SelectCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectCategoryCell.xib; sourceTree = "<group>"; };
+		0B464DF929F208270088D2E1 /* SelectCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryVC.swift; sourceTree = "<group>"; };
+		0B464DFA29F208270088D2E1 /* SelectCategoryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectCategoryVC.xib; sourceTree = "<group>"; };
 		0B47665429F0433B00E6B115 /* ActionMoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionMoreVC.swift; sourceTree = "<group>"; };
 		0B47665529F0433B00E6B115 /* ActionMoreVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionMoreVC.xib; sourceTree = "<group>"; };
 		0BA163C529E8D88900FFB12A /* ic-category.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-category.png"; sourceTree = "<group>"; };
@@ -87,6 +97,8 @@
 		0BEA4FEE29EA9B28001810D7 /* InputPasswordAppVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPasswordAppVC.swift; sourceTree = "<group>"; };
 		0BEA4FEF29EA9B28001810D7 /* InputPasswordAppVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputPasswordAppVC.xib; sourceTree = "<group>"; };
 		0BEA4FF229EAAA96001810D7 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		0BFC36F929F17DD800A347E5 /* CreateCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCategory.swift; sourceTree = "<group>"; };
+		0BFC36FA29F17DD800A347E5 /* CreateCategory.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateCategory.xib; sourceTree = "<group>"; };
 		5BCCC95D179234224E94E0F9 /* Pods_ThuVienAnh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThuVienAnh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8079763120674EA0B18748C2 /* Pods-ThuVienAnh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThuVienAnh.debug.xcconfig"; path = "Target Support Files/Pods-ThuVienAnh/Pods-ThuVienAnh.debug.xcconfig"; sourceTree = "<group>"; };
 		D922BF0B29E8EBBA001E3E26 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -139,6 +151,7 @@
 		0B2F003D29E9A480007DED42 /* PCreate */ = {
 			isa = PBXGroup;
 			children = (
+				0B464DF429F207160088D2E1 /* SelectCategory */,
 				0B2F003E29E9A4E3007DED42 /* CreateNewPasswordVC.swift */,
 				0BEA4FE229EA479E001810D7 /* CreateNewPasswordVC.xib */,
 				0B3282F629EA2C0200474907 /* PasswordGenerator.swift */,
@@ -154,6 +167,17 @@
 				0B3AEEF229EBD2B9009C206C /* CustomsAlertVC.xib */,
 			);
 			path = Customs;
+			sourceTree = "<group>";
+		};
+		0B464DF429F207160088D2E1 /* SelectCategory */ = {
+			isa = PBXGroup;
+			children = (
+				0B464DF529F207500088D2E1 /* SelectCategoryCell.swift */,
+				0B464DF629F207500088D2E1 /* SelectCategoryCell.xib */,
+				0B464DF929F208270088D2E1 /* SelectCategoryVC.swift */,
+				0B464DFA29F208270088D2E1 /* SelectCategoryVC.xib */,
+			);
+			path = SelectCategory;
 			sourceTree = "<group>";
 		};
 		0BA163CD29E8D8C400FFB12A /* images */ = {
@@ -193,6 +217,8 @@
 				0BA163DB29E8DC1000FFB12A /* CategoryMainVC.xib */,
 				D9B16B8729F1532B00940DA8 /* CategoryCell.swift */,
 				D9B16B8829F1532B00940DA8 /* CategoryCell.xib */,
+				0BFC36F929F17DD800A347E5 /* CreateCategory.swift */,
+				0BFC36FA29F17DD800A347E5 /* CreateCategory.xib */,
 			);
 			path = CategoryVC;
 			sourceTree = "<group>";
@@ -425,10 +451,13 @@
 				D9CEDE5C29E80AFC00A7C846 /* LaunchScreen.storyboard in Resources */,
 				0B3AEEF429EBD2B9009C206C /* CustomsAlertVC.xib in Resources */,
 				0BA163CB29E8D88900FFB12A /* ic-photo.png in Resources */,
+				0BFC36FC29F17DD800A347E5 /* CreateCategory.xib in Resources */,
 				0B47665729F0433B00E6B115 /* ActionMoreVC.xib in Resources */,
+				0B464DFC29F208270088D2E1 /* SelectCategoryVC.xib in Resources */,
 				D9B16B8A29F1532B00940DA8 /* CategoryCell.xib in Resources */,
 				0BA163E129E8DC2300FFB12A /* PhotoMainVC.xib in Resources */,
 				D9CEDE5929E80AFC00A7C846 /* Assets.xcassets in Resources */,
+				0B464DF829F207500088D2E1 /* SelectCategoryCell.xib in Resources */,
 				0BA163CA29E8D88900FFB12A /* ic-password.png in Resources */,
 				0BA163C929E8D88900FFB12A /* ic-category.png in Resources */,
 			);
@@ -495,15 +524,18 @@
 				D9CEDE6E29E813A000A7C846 /* MainVC.swift in Sources */,
 				0B3AEEF329EBD2B9009C206C /* CustomsAlertVC.swift in Sources */,
 				D9B16B8929F1532B00940DA8 /* CategoryCell.swift in Sources */,
+				0B464DF729F207500088D2E1 /* SelectCategoryCell.swift in Sources */,
 				0BB33DFA29EE0AD900B281DE /* Utility.swift in Sources */,
 				0BEA4FE729EA5175001810D7 /* IntroVC.swift in Sources */,
 				D9CEDE5229E80AFA00A7C846 /* SceneDelegate.swift in Sources */,
 				D9B16B8629F1510000940DA8 /* Category.swift in Sources */,
+				0B464DFB29F208270088D2E1 /* SelectCategoryVC.swift in Sources */,
 				0BA163E029E8DC2300FFB12A /* PhotoMainVC.swift in Sources */,
 				0B3282F829EA2C0200474907 /* PasswordGenerator.swift in Sources */,
 				D9BE5AA229E96CAF0044CE17 /* Extensions.swift in Sources */,
 				D922BF0C29E8EBBA001E3E26 /* Helper.swift in Sources */,
 				0BA163DC29E8DC1000FFB12A /* CategoryMainVC.swift in Sources */,
+				0BFC36FB29F17DD800A347E5 /* CreateCategory.swift in Sources */,
 				0BEA4FEC29EA543F001810D7 /* Common.swift in Sources */,
 				0BA163D429E8DBE900FFB12A /* PasswordMainVC.swift in Sources */,
 				0B47665629F0433B00E6B115 /* ActionMoreVC.swift in Sources */,

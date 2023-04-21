@@ -14,7 +14,9 @@ class Common {
     public static var key_Pass: String = "isPass"
     public static var key_passwordApp: String = "passwordApp"
     public static var key_passwordStorage: String = "passwordStorage"
+    public static var key_category: String = "category"
     public static var passwordStorage = [PasswordStorage]()
+    public static var category = [Category]()
     enum alertStatus {
         case success, error, warning
         func getStatus() -> Int {
@@ -52,4 +54,16 @@ class Common {
         let JSONString = Mapper().toJSONString(Common.passwordStorage, prettyPrint: true)
         CacheManager.shared.setPasswordStorage(value: JSONString)
     }
+    
+    public func appendCategoty(_ category: Category) -> Void {
+        Common.category.append(category)
+        let JSONString = Mapper().toJSONString(Common.category, prettyPrint: true)
+        CacheManager.shared.setCategory(value: JSONString)
+    }
+    public func updateCategory() -> Void {
+        let JSONString = Mapper().toJSONString(Common.category, prettyPrint: true)
+        CacheManager.shared.setCategory(value: JSONString)
+    }
+    
+    
 }

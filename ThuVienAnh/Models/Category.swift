@@ -13,6 +13,8 @@ class Category: Mappable {
     var name: String?
     var image: String?
     var status: Int?
+    
+    init (){}
     required init?(map: Map) {
         mapping(map: map)
     }

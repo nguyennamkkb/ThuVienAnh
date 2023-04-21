@@ -32,4 +32,11 @@ class CacheManager {
     func setPasswordStorage(value: String?) {
         return defaults.setValue(value ?? "", forKey: Common.key_passwordStorage)
     }
+    
+    func getCategory() -> String {
+        return defaults.string(forKey: Common.key_category) ?? ""
+    }
+    func setCategory(value: String?) {
+        return defaults.setValue(value ?? "", forKey: Common.key_category)
+    }
 }
