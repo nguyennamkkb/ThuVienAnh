@@ -39,4 +39,18 @@ class CacheManager {
     func setCategory(value: String?) {
         return defaults.setValue(value ?? "", forKey: Common.key_category)
     }
+    
+    func getBiometrics() -> Bool {
+        return defaults.bool(forKey: Common.key_biometrics)
+    }
+    func setBiometrics(status: Bool) {
+        return defaults.setValue(status, forKey: Common.key_biometrics)
+    }
+    
+    func getAccessBiometrics() -> Int {
+        return defaults.integer(forKey: Common.key_accessBiometrics)
+    }
+    func setAccessBiometrics(status: Int) {
+        return defaults.setValue(status, forKey: Common.key_accessBiometrics)
+    }
 }

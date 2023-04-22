@@ -34,6 +34,10 @@
 		0BA163E129E8DC2300FFB12A /* PhotoMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BA163DF29E8DC2300FFB12A /* PhotoMainVC.xib */; };
 		0BB33DFA29EE0AD900B281DE /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB33DF929EE0AD900B281DE /* Utility.swift */; };
 		0BC0C32529EEDA680009EAC1 /* LocalStored.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0C32429EEDA680009EAC1 /* LocalStored.swift */; };
+		0BDA9B9E29F354A600414423 /* ReEnterPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDA9B9C29F354A600414423 /* ReEnterPasswordVC.swift */; };
+		0BDA9B9F29F354A600414423 /* ReEnterPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BDA9B9D29F354A600414423 /* ReEnterPasswordVC.xib */; };
+		0BDA9BA229F3562E00414423 /* CreatePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDA9BA029F3562E00414423 /* CreatePasswordVC.swift */; };
+		0BDA9BA329F3562E00414423 /* CreatePasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BDA9BA129F3562E00414423 /* CreatePasswordVC.xib */; };
 		0BEA4FE329EA479E001810D7 /* CreateNewPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BEA4FE229EA479E001810D7 /* CreateNewPasswordVC.xib */; };
 		0BEA4FE729EA5175001810D7 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA4FE529EA5175001810D7 /* IntroVC.swift */; };
 		0BEA4FE829EA5175001810D7 /* IntroVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BEA4FE629EA5175001810D7 /* IntroVC.xib */; };
@@ -89,6 +93,10 @@
 		0BA163DF29E8DC2300FFB12A /* PhotoMainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoMainVC.xib; sourceTree = "<group>"; };
 		0BB33DF929EE0AD900B281DE /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		0BC0C32429EEDA680009EAC1 /* LocalStored.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStored.swift; sourceTree = "<group>"; };
+		0BDA9B9C29F354A600414423 /* ReEnterPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReEnterPasswordVC.swift; sourceTree = "<group>"; };
+		0BDA9B9D29F354A600414423 /* ReEnterPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReEnterPasswordVC.xib; sourceTree = "<group>"; };
+		0BDA9BA029F3562E00414423 /* CreatePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordVC.swift; sourceTree = "<group>"; };
+		0BDA9BA129F3562E00414423 /* CreatePasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreatePasswordVC.xib; sourceTree = "<group>"; };
 		0BEA4FE229EA479E001810D7 /* CreateNewPasswordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateNewPasswordVC.xib; sourceTree = "<group>"; };
 		0BEA4FE529EA5175001810D7 /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
 		0BEA4FE629EA5175001810D7 /* IntroVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroVC.xib; sourceTree = "<group>"; };
@@ -246,6 +254,10 @@
 			children = (
 				0BEA4FEE29EA9B28001810D7 /* InputPasswordAppVC.swift */,
 				0BEA4FEF29EA9B28001810D7 /* InputPasswordAppVC.xib */,
+				0BDA9B9C29F354A600414423 /* ReEnterPasswordVC.swift */,
+				0BDA9B9D29F354A600414423 /* ReEnterPasswordVC.xib */,
+				0BDA9BA029F3562E00414423 /* CreatePasswordVC.swift */,
+				0BDA9BA129F3562E00414423 /* CreatePasswordVC.xib */,
 			);
 			path = PasswordApp;
 			sourceTree = "<group>";
@@ -449,6 +461,7 @@
 				D9CEDE7429E815E700A7C846 /* Icon App.png in Resources */,
 				0BEA4FE329EA479E001810D7 /* CreateNewPasswordVC.xib in Resources */,
 				D9CEDE5C29E80AFC00A7C846 /* LaunchScreen.storyboard in Resources */,
+				0BDA9BA329F3562E00414423 /* CreatePasswordVC.xib in Resources */,
 				0B3AEEF429EBD2B9009C206C /* CustomsAlertVC.xib in Resources */,
 				0BA163CB29E8D88900FFB12A /* ic-photo.png in Resources */,
 				0BFC36FC29F17DD800A347E5 /* CreateCategory.xib in Resources */,
@@ -459,6 +472,7 @@
 				D9CEDE5929E80AFC00A7C846 /* Assets.xcassets in Resources */,
 				0B464DF829F207500088D2E1 /* SelectCategoryCell.xib in Resources */,
 				0BA163CA29E8D88900FFB12A /* ic-password.png in Resources */,
+				0BDA9B9F29F354A600414423 /* ReEnterPasswordVC.xib in Resources */,
 				0BA163C929E8D88900FFB12A /* ic-category.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +527,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BC0C32529EEDA680009EAC1 /* LocalStored.swift in Sources */,
+				0BDA9B9E29F354A600414423 /* ReEnterPasswordVC.swift in Sources */,
 				0BEA4FF029EA9B28001810D7 /* InputPasswordAppVC.swift in Sources */,
 				0BEA4FF329EAAA96001810D7 /* BaseVC.swift in Sources */,
 				D9A9D1F829EFE51F0099281E /* PasswordStorage.swift in Sources */,
@@ -539,6 +554,7 @@
 				0BEA4FEC29EA543F001810D7 /* Common.swift in Sources */,
 				0BA163D429E8DBE900FFB12A /* PasswordMainVC.swift in Sources */,
 				0B47665629F0433B00E6B115 /* ActionMoreVC.swift in Sources */,
+				0BDA9BA229F3562E00414423 /* CreatePasswordVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

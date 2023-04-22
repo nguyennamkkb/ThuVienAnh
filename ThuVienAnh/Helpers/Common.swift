@@ -15,8 +15,11 @@ class Common {
     public static var key_passwordApp: String = "passwordApp"
     public static var key_passwordStorage: String = "passwordStorage"
     public static var key_category: String = "category"
+    public static var key_biometrics: String = "biometric"
+    public static var key_accessBiometrics: String = "accessBiometrics"
     public static var passwordStorage = [PasswordStorage]()
     public static var category = [Category]()
+    public static var accessBiometric: Bool = true
     enum alertStatus {
         case success, error, warning
         func getStatus() -> Int {
@@ -64,6 +67,8 @@ class Common {
         let JSONString = Mapper().toJSONString(Common.category, prettyPrint: true)
         CacheManager.shared.setCategory(value: JSONString)
     }
+    
+   
     
     
 }

@@ -1,29 +1,27 @@
 //
-//  InputPasswordAppVC.swift
+//  ReEnterPasswordVC.swift
 //  ThuVienAnh
 //
-//  Created by namnl on 15/04/2023.
+//  Created by namnl on 22/04/2023.
 //
 
 import UIKit
-import LocalAuthentication
-class InputPasswordAppVC: BaseVC {
-    
+
+class ReEnterPasswordVC: BaseVC {
+
     @IBOutlet var dot1: UIImageView!
     @IBOutlet var dot2: UIImageView!
     @IBOutlet var dot3: UIImageView!
     @IBOutlet var dot4: UIImageView!
     @IBOutlet var messageView: UIView!
-    let localAuthenticationContext = LAContext()
+    var passwordInputFirst: String? = ""
     var isHideAlert: Int = 1
     var userPassword: String? = ""
     
-    @IBOutlet var btnBiometrics: UIButton!
+    var onSuccess: ClosureAction?
     override func viewDidLoad() {
         super.viewDidLoad()
-        localAuthenticationContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil)
         setlayout()
-        btnBiometrics.alpha = CGFloat(CacheManager.shared.getAccessBiometrics())
     }
     func resetPassword(){
         userPassword = ""
@@ -48,7 +46,6 @@ class InputPasswordAppVC: BaseVC {
             userPassword! = String(substring)
             updateDotLight(length: userPassword?.count ?? 0)
         }
-        
     }
     func updateDotLight(length: Int) {
         let dotArray = [dot1, dot2, dot3, dot4]
@@ -67,13 +64,15 @@ class InputPasswordAppVC: BaseVC {
     }
     func checkPassword() {
         guard let password = userPassword else {return}
-        if password != CacheManager.shared.getPassword() {
-
+        if password != passwordInputFirst {
+            
             showMessage()
             resetPassword()
             
         }else {
-            self.wrapRoot(vc: MainVC())
+            onSuccess?()
+            dismiss(animated: false)
+//            self.wrapRoot(vc: MainVC())
         }
         
     }
@@ -89,7 +88,7 @@ class InputPasswordAppVC: BaseVC {
             self.messageView.alpha = 1
             self.messageView.isHidden = false
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
             self.hideMessage()
         }
     }
@@ -99,28 +98,7 @@ class InputPasswordAppVC: BaseVC {
         messageView.layer.cornerRadius = 10
     }
     
-    @IBAction func btnFaceIdPressed(_ sender: UIButton) {
-        let context = LAContext()
-        var error: NSError?
-        
-        // Check if the device supports Face ID or Touch ID
-        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-            let reason = "Authenticate using Face ID"
-            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, error in
-                DispatchQueue.main.async {
-                    if success {
-                        Common.isLogin = true
-                        CacheManager.shared.setPass(true)
-                        self.wrapRoot(vc: MainVC())
-                    } else {
-                        print("That bai")
-                        CacheManager.shared.setPass(false)
-                    }
-                }
-            }
-        } else {
-            // Biometric authentication not supported
-        }
+    func bindData(value: String) {
+        self.passwordInputFirst = value
     }
-    
 }
