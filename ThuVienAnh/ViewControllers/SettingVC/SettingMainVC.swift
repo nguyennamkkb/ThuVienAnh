@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SettingMainVC: UIViewController {
+class SettingMainVC: BaseVC {
 
     @IBOutlet var biometricsSwitch: UISwitch!
     
@@ -30,6 +30,7 @@ class SettingMainVC: UIViewController {
     }
     
     @IBAction func changePasswordPressed(_ sender: UIButton) {
+        self.pushVC(vc: CreatePasswordVC())
     }
     
     @IBAction func btnChangeAppIconPressed(_ sender: UIButton) {
