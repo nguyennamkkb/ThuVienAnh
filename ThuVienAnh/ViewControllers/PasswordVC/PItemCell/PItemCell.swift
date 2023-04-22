@@ -19,7 +19,7 @@ class PItemCell: UITableViewCell {
         super.awakeFromNib()
     }
     func sendData(item: PasswordStorage) {
-        self.dateLbl.text = item.date
+        self.dateLbl.text = item.title
         self.nameLbl.text = item.name
         self.passwordLbl.text = item.pass
         self.item = item

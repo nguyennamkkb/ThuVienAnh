@@ -27,7 +27,7 @@ class PasswordMainVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
         tableView.register(nib, forCellReuseIdentifier: "PItemCell")
         
         getDataStatusShow()
-        //        print(tableData.toJSON())
+    
     }
     override func viewDidAppear(_ animated: Bool) {
         self.tableData = Common.passwordStorage
@@ -39,16 +39,15 @@ class PasswordMainVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
     
     
     @IBAction func searchNameChanged(_ sender: UITextField) {
+        tableData = Common.passwordStorage
         let value = keySearch.text ?? ""
-
         if value == "" {
             tableData = Common.passwordStorage
-            getDataStatusShow()
-            
         }else {
-            let filter = tableData.filter { $0.name?.contains(value) ?? false }
+            let filter = tableData.filter { $0.title?.contains(value) ?? false }
             tableData = filter
         }
+        getDataStatusShow()
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }

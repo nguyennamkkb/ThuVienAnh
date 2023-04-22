@@ -20,6 +20,7 @@ class SelectCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         tableView.register(nib, forCellReuseIdentifier: "SelectCategoryCell")
         tableData = Common.category
         updateTableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -34,7 +35,6 @@ class SelectCategoryVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = tableData[indexPath.row]
-        print("item \(item)")
         onSelected?(item)
         dismiss(animated: true)
     }

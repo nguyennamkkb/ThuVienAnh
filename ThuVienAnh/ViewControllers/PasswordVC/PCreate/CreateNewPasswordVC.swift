@@ -19,7 +19,7 @@ class CreateNewPasswordVC: BaseVC {
     @IBOutlet var titleTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     @IBOutlet var usernameTF: UITextField!
-    
+    var category = Category()
     var dataCallback: String?
     
     var passwordGenerate: String = ""
@@ -58,13 +58,13 @@ class CreateNewPasswordVC: BaseVC {
     }
     func storeData(){
         let passwordData: PasswordStorage = PasswordStorage()
-        if usernameTF.text != "", passwordTF.text != "", titleTF.text != "" {
+        if usernameTF.text != "", passwordTF.text != "", titleTF.text != "", category.name != nil {
             passwordData.id = Date().milliseconds
-            passwordData.date = "19/04/2023"
+            passwordData.date = "\(Date().milliseconds)"
             passwordData.title = titleTF.text
-            passwordData.name = btnSelectCategory.titleLabel?.text ?? ""
+            passwordData.name = usernameTF.text
             passwordData.pass = passwordTF.text
-            passwordData.category = "Websites"
+            passwordData.category = category.name
             passwordData.status = 1
             passwordData.heart = 0
             Common().appendPasswordStorage(passwordData)
@@ -73,13 +73,37 @@ class CreateNewPasswordVC: BaseVC {
     
     @IBAction func bntSelectCategoryPressed(_ sender: UIButton) {
         let vc = SelectCategoryVC()
-        let sheet = SheetViewController(controller: vc, sizes: [.fixed(200)])
+        let sheet = SheetViewController(controller: vc, sizes: [.fixed(300)])
+        vc.view.backgroundColor = .black
+        sheet.cornerRadius = 0
+        sheet.contentBackgroundColor = .black
+        sheet.pullBarBackgroundColor = .black
         self.present(sheet, animated: true)
         vc.onSelected = {[weak self] item in
             guard let self = self else {return}
 //            print("item \(item.toJSON())")
+            self.category = item
             self.btnSelectCategory.setTitle(item.name, for: .normal)
-            
         }
+    }
+}
+extension UIViewController {
+    public func showSheet(controller: UIViewController, sizes: [SheetSize]) {
+        let controller = SheetViewController(controller:controller, sizes: sizes)
+        controller.overlayColor = UIColor.black.withAlphaComponent(0.4)
+        controller.cornerRadius = 16
+        self.present(controller, animated: false, completion: nil)
+    }
+    
+    public var sheetViewController: SheetViewController? {
+        var parent = self.parent
+        while let currentParent = parent {
+            if let sheetViewController = currentParent as? SheetViewController {
+                return sheetViewController
+            } else {
+                parent = currentParent.parent
+            }
+        }
+        return nil
     }
 }

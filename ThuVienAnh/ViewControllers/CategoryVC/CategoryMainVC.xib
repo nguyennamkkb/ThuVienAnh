@@ -20,6 +20,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryMainVC" customModule="ThuVienAnh" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="1dk-5g-T1m" id="T6u-Mp-sUc"/>
+                <outlet property="tableView" destination="Z5y-O1-QQk" id="EPb-ql-ha3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -156,6 +157,17 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mpa-ED-I2h">
+                    <rect key="frame" x="23" y="399" width="350" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="0.20493574331927772" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ise-KO-acg"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Z5y-O1-QQk">
+                    <rect key="frame" x="20" y="420" width="353" height="397"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -165,6 +177,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1dk-5g-T1m" secondAttribute="trailing" id="5cc-1W-qya"/>
                 <constraint firstItem="1dk-5g-T1m" firstAttribute="top" secondItem="1ax-8B-CYi" secondAttribute="bottom" constant="20" id="8d0-yo-QX1"/>
                 <constraint firstItem="1ax-8B-CYi" firstAttribute="top" secondItem="rzr-8z-7gq" secondAttribute="bottom" constant="20" id="Gov-JE-fzY"/>
+                <constraint firstItem="tGM-3N-37H" firstAttribute="top" secondItem="Z5y-O1-QQk" secondAttribute="bottom" id="HT0-7X-H5P"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1ax-8B-CYi" secondAttribute="trailing" constant="20" id="IX3-zz-95a"/>
                 <constraint firstAttribute="trailing" secondItem="b0X-nM-edS" secondAttribute="trailing" id="Igj-5a-dmH"/>
                 <constraint firstItem="rzr-8z-7gq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Kdu-4B-Yqi"/>
@@ -175,9 +188,15 @@
                 <constraint firstItem="b0X-nM-edS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ys6-gl-UKJ"/>
                 <constraint firstItem="1ax-8B-CYi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ZPo-q6-1AC"/>
                 <constraint firstItem="rzr-8z-7gq" firstAttribute="top" secondItem="gvh-I7-3ZK" secondAttribute="bottom" constant="30" id="bMZ-E2-HgX"/>
+                <constraint firstItem="Z5y-O1-QQk" firstAttribute="top" secondItem="Mpa-ED-I2h" secondAttribute="bottom" constant="20" id="ejn-8c-bVK"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gvh-I7-3ZK" secondAttribute="trailing" constant="20" id="fVk-db-kK5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Mpa-ED-I2h" secondAttribute="trailing" constant="20" id="lsQ-Vu-wiY"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tGM-3N-37H" secondAttribute="bottom" id="mbz-VT-9X6"/>
+                <constraint firstItem="Mpa-ED-I2h" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="23" id="o90-cE-nIE"/>
+                <constraint firstItem="Mpa-ED-I2h" firstAttribute="top" secondItem="1dk-5g-T1m" secondAttribute="bottom" id="qOc-p0-thu"/>
                 <constraint firstItem="gvh-I7-3ZK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="sQY-bH-uPA"/>
+                <constraint firstItem="Z5y-O1-QQk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="t2a-V0-P6W"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Z5y-O1-QQk" secondAttribute="trailing" constant="20" id="t9e-hW-afb"/>
                 <constraint firstItem="tGM-3N-37H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="v8a-SN-Wjk"/>
             </constraints>
             <point key="canvasLocation" x="-36" y="0.0"/>

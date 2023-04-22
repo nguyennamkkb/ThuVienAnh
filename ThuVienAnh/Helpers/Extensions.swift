@@ -11,7 +11,16 @@ import UIKit
 typealias ClosureAction = ()->Void
 typealias ClosureComplet = (Bool)->Void
 typealias ClosureCustom<T> = ((_ item: T) -> Void)
-
+extension Array {
+    //lay item tai vi tri chack nil
+    func itemAtIndex(index: Int) ->Element? {
+        if self.count > index, index >= 0 {
+            return self[index]
+        }else {
+            return nil
+        }
+    }
+}
 extension UIColor {
     public convenience init?(hex: String) {
         let r, g, b, a: CGFloat

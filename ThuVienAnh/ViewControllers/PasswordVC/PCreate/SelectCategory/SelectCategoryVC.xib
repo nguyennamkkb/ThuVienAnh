@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,24 +21,19 @@
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EB6-Z1-xB3">
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="EB6-Z1-xB3" secondAttribute="bottom" id="FdN-7l-BZF"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EB6-Z1-xB3" secondAttribute="trailing" id="W7F-92-iNB"/>
                 <constraint firstItem="EB6-Z1-xB3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="a7K-hY-4Tj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="EB6-Z1-xB3" secondAttribute="bottom" id="diq-ce-dgp"/>
                 <constraint firstItem="EB6-Z1-xB3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zcK-Tv-KVa"/>
             </constraints>
             <point key="canvasLocation" x="138" y="21"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
