@@ -26,17 +26,14 @@ class MainVC: UITabBarController {
         categoryVC.tabBarItem = UITabBarItem(title: "Categories", image: UIImage(named: "ic-note"), tag: 1)
         let categoryNavi = UINavigationController(rootViewController: categoryVC)
         
-        //photoVC
-        let photoVC = PhotoMainVC()
-        photoVC.tabBarItem = UITabBarItem(title: "Photos", image: UIImage(named: "ic-photo"), tag: 1)
-        let photoNavi = UINavigationController(rootViewController: photoVC)
+    
         
         //Profile
         let settingVC = SettingMainVC()
         settingVC.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(named: "ic-setting"), tag: 1)
         let settingNavi = UINavigationController(rootViewController: settingVC)
         
-        self.viewControllers = [passwordNavi, categoryNavi,photoNavi, settingNavi]
+        self.viewControllers = [passwordNavi, categoryNavi, settingNavi]
         setLayout()
     }
     func setLayout(){
