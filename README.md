@@ -21,3 +21,4 @@ Thư viện:
 9. Xóa, đánh dấu thích tài khoản
 10. Bật tắt đăng nhập bằng FaceId
    
+[Hình ảnh của ứng dụng]([http://~](https://drive.google.com/drive/folders/1_EymcgrkacaLhkxAeW0ANrO3Kvs301a8?usp=sharing)https://drive.google.com/drive/folders/1_EymcgrkacaLhkxAeW0ANrO3Kvs301a8?usp=sharing)
