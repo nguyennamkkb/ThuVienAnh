@@ -19,6 +19,6 @@ Thư viện:
 7. Sao chép tài khoản vào bộ nhớ đệm
 8. chia sẻ tài khoản đến các ứng dụng mxh, chat
 9. Xóa, đánh dấu thích tài khoản
-10. Bật tắt đăng nhập bằng FaceId
+10. Bật,tắt đăng nhập bằng FaceId
    
 [Hình ảnh của ứng dụng](https://drive.google.com/drive/folders/1_EymcgrkacaLhkxAeW0ANrO3Kvs301a8?usp=sharing)https://drive.google.com/drive/folders/1_EymcgrkacaLhkxAeW0ANrO3Kvs301a8?usp=sharing)
