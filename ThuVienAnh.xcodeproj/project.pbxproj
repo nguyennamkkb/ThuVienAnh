@@ -697,6 +697,7 @@
 				DEVELOPMENT_TEAM = 4524TL74Z9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ThuVienAnh/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Password Manager";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "use to login App";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -728,6 +729,7 @@
 				DEVELOPMENT_TEAM = 4524TL74Z9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ThuVienAnh/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Password Manager";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "use to login App";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
