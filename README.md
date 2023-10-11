@@ -4,11 +4,11 @@ sử dụng:
 + UICollectionView
 + Closure
 + UserDefaults
+
 Thư viện:
 + FittedSheets
 + ObjectMapper
 + IQKeyboardManagerSwift
-+ UserDefaults
 # Chức năng
 1. Cài đặt mật khẩu ứng dụng ban đầu bằng 4 chữ số và yêu cầu nhập lại
 2. Thay đổi mật khẩu ứng dụng
